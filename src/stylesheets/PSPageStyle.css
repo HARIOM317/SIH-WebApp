@@ -1,0 +1,17 @@
+.problem-statements{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* width: 80vw; */
+}
+
+.problem-statements thead tr th{
+    background-color: var(--skin-color);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.problem-statements tbody tr td{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

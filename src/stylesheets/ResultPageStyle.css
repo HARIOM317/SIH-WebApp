@@ -1,0 +1,11 @@
+.coming-soon{
+    margin: 2rem 0 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming-soon .lottie-animation{
+    width: 50vw;
+    margin: 0 2rem;
+}

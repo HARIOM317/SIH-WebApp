@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Pacifico&family=Poppins:wght@200;300;400;500;600&family=Satisfy&family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+:root {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --bg-black-25: #d9d0dd;
+  --text-black-900: #302e4d;
+  --text-black-700: #58567c;
+  --skin-color: #f65800;
+  --secondary-color: #0e7c3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+
+/* Edit Scrollbar */
+::-webkit-scrollbar {
+  height: 0;
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-black-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-black-700);
+  border-radius: 5rem;
+}
+
+/* Common Classes */
+.my-btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 30px;
+  color: white;
+  border-radius: 1.5rem;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  background: var(--skin-color);
+  transition: all 0.3s ease;
+}
+
+.my-btn:hover {
+  transform: scale(1.05);
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.paragraph {
+  font-size: 1rem;
+  color: var(--text-black-700);
+  margin: 1rem !important;
+  text-align: justify;
+}
+
+.font-awesome-style {
+  font-size: 2.3rem;
+  color: var(--skin-color);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--bg-black-100);
+  display: grid;
+  place-items: center;
+  margin: 2rem auto;
+  border: 1px solid var(--bg-black-50);
+}
