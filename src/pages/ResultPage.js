@@ -9,7 +9,7 @@ const ResultPage = () => {
   return (
     <>
       <Navbar />
-      <section className="coming-soon">
+      <section className="coming-soon margin-top-ultra-max">
         <Lottie
           loop={true}
           animationData={ComingSoonResult}

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
+import ExploreSIHPage from "./pages/ExploreSIHPage";
 import InstructionsPage from "./pages/InstructionPage";
 import ProblemStatementsPage from "./pages/ProblemStatementPage";
 import ResultPage from "./pages/ResultPage";
@@ -15,7 +15,7 @@ const App = () => {
     <>
       <Routes>
         <Route exact path="/" Component={HomePage} />
-        <Route path="/about" Component={AboutPage} />
+        <Route path="/explore" Component={ExploreSIHPage} />
         <Route path="/instructions" Component={InstructionsPage} />
         <Route path="/problem statements" Component={ProblemStatementsPage} />
         <Route path="/result" Component={ResultPage} />

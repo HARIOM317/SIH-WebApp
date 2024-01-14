@@ -1,0 +1,201 @@
+// 1. Patrons and Chief Patrons Data
+// 1.1 Patrons Data
+const patronsDataAPI = [
+  {
+    id: 1,
+    photo: "./images/community_images/Patrons/1.jpg",
+    name: "Mr. Siddharth Agrawal",
+    bio: "MD, Sagar Group",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 2,
+    photo: "./images/community_images/Patrons/2.jpg",
+    name: "Dr. Jyoti Deshmukh",
+    bio: "Group Director at SISTec",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 3,
+    photo: "./images/community_images/Patrons/3.jpg",
+    name: "Dr. Manish Billore",
+    bio: "Principal of SISTec-E",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+];
+
+// 1.2 Chief Patrons Data
+const chiefPatronsDataAPI = [
+  {
+    id: 1,
+    photo: "./images/community_images/Chief Patrons/sudir_agrawal_md.jpg",
+    name: "Mr. Siddharth Agrawal",
+    bio: "MD, Sagar Group",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 2,
+    photo: "./images/community_images/Chief Patrons/vcsirRGPV.png",
+    name: "Dr. Jyoti Deshmukh",
+    bio: "Group Director at SISTec",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+];
+
+
+//2.  Advisory Committee Data
+const advisoryCommitteeDataAPI = [
+  {
+    id: 1,
+    photo: "./images/community_images/Advisory-Committee/1.jpg",
+    name: "Dr. Sanjeev Sharma",
+    bio: "Deen Faculty RGPV",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 2,
+    photo: "./images/community_images/Advisory-Committee/2.jpeg",
+    name: "Mr. Yogesh Khakre",
+    bio: "COO Bhopal Smart City Ltd.",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 3,
+    photo: "./images/community_images/Advisory-Committee/3.jpg",
+    name: "Mr. Shantanu Chakraborty",
+    bio: "Strategic Consultant at Empower",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 4,
+    photo: "./images/community_images/Advisory-Committee/4.jpg",
+    name: "Mrs. Anuja Sharma",
+    bio: "Senior Scientist, ISRO",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+];
+
+// 3. Coordinators Data
+const coordinatorsDataAPI = [
+  {
+    id: 1,
+    photo: "./images/community_images/Coordinators/1.jpeg",
+    name: "Prof. Ajit Shrivastav",
+    bio: "About Bio",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 2,
+    photo: "./images/community_images/Coordinators/2.jpeg",
+    name: "Prof. Anuj Kumar Pal",
+    bio: "About Bio",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 3,
+    photo: "./images/community_images/Coordinators/3.jpeg",
+    name: "Prof. Rohit Bansal",
+    bio: "About Bio",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 4,
+    photo: "./images/community_images/Coordinators/4.jpg",
+    name: "Prof. Himanshu Yadav",
+    bio: "About Bio",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 5,
+    photo: "./images/community_images/Coordinators/5.jpg",
+    name: "Prof. Khushboo Bharadwaj",
+    bio: "About Bio",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 6,
+    photo: "./images/community_images/Coordinators/6.jpeg",
+    name: "Prof. Amit Sahu",
+    bio: "About Bio",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 7,
+    photo: "./images/community_images/Coordinators/7.jpeg",
+    name: "Prof. Namarata Shrivastav",
+    bio: "About Bio",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 8,
+    photo: "./images/community_images/Coordinators/8.jpeg",
+    name: "Prof. Vandana Rai",
+    bio: "About Bio",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+  {
+    id: 9,
+    photo: "./images/community_images/Coordinators/9.jpg",
+    name: "Prof. Arvind Jain Sir",
+    bio: "About Bio",
+    linkedInProfile: "",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+];
+
+
+
+export { patronsDataAPI, chiefPatronsDataAPI, advisoryCommitteeDataAPI, coordinatorsDataAPI };

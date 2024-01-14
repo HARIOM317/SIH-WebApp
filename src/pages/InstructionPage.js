@@ -6,7 +6,7 @@ const InstructionsPage = () => {
   return (
     <>
       <Navbar />
-      <h1>Instruction Page</h1>
+      <h1 className="margin-top-ultra-max">Instruction Page</h1>
       <Footer />
     </>
   );

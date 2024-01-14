@@ -5,7 +5,7 @@ const TopSlider = () => {
   const [image] = useState(sliderAPI);
   return (
     <>
-      <div>
+      <div className="margin-top-max">
         <div
           id="carouselExampleAutoplaying"
           class="carousel slide"

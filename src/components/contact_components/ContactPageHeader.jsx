@@ -4,7 +4,7 @@ import "../../stylesheets/ContactUsStyle.css";
 const ContactPageHeader = () => {
   return (
     <>
-      <section className="contact">
+      <section className="contact margin-top-ultra-max">
         <div className="container">
           <h3 class="contact-title pad-15">HAVE YOU ANY QUESTION?</h3>
           <h4 class="contact-sub-title pad-15">

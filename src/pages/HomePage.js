@@ -6,7 +6,12 @@ import Footer from "../components/other/Footer";
 import HomePageHeader from "../components/home_components/HomePageHeader";
 import ProcessFlow from "../components/home_components/ProcessFlow";
 import FAQs from "../components/home_components/FAQs";
-// import PatronsGallery from "../components/home_components/PatronsGallery";
+import AnnouncementTab from "../components/home_components/AnnouncementTab";
+import ThemeSlider from "../components/home_components/ThemeSlider";
+import SIHTimeLine from "../components/home_components/SIHTimeLine";
+import EventSchedule from "../components/home_components/EventSchedule";
+import OurCommittee from "../components/home_components/OurCommittee";
+import DeveloperCards from "../components/home_components/DeveloperCards";
 
 const HomePage = () => {
   return (
@@ -14,9 +19,14 @@ const HomePage = () => {
       <Navbar />
       <TopSlider />
       <HomePageHeader />
+      <AnnouncementTab />
+      <ThemeSlider />
       <ProcessFlow />
-      {/* <PatronsGallery /> */}
+      <SIHTimeLine />
+      <EventSchedule />
+      <OurCommittee />
       <FAQs />
+      <DeveloperCards />
       <Footer />
     </>
   );

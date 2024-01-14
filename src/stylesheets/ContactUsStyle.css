@@ -39,7 +39,7 @@
   padding: 1rem;
   margin: 1rem;
   border-radius: 50%;
-  color: var(--skin-color);
+  color: var(--secondary-color);
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -100,7 +100,7 @@
 
 .contact-right-side form .form-control:focus {
   box-shadow: 0 0 30px rgba(16, 15, 27, 0.15);
-  border: 1.5px solid var(--text-black-700);
+  border: 1.5px solid rgba(0, 0, 0, 0.25);
 }
 
 .contact-right-side form textarea.form-control {

@@ -33,10 +33,10 @@ class Navbar extends Component {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/about">About SIH</NavLink>
+                <NavLink to="/explore">Explore SIH</NavLink>
               </li>
               <li>
-                <NavLink to="/instructions">Instructions</NavLink>
+                <NavLink to="/instructions">Guidelines</NavLink>
               </li>
               <li>
                 <NavLink to="/problem statements">Problem Statements</NavLink>
@@ -47,6 +47,9 @@ class Navbar extends Component {
               <li>
                 <NavLink to="/contact">Contact Us</NavLink>
               </li>
+              <button className="button" type="submit">
+                Register
+              </button>
             </ul>
           </div>
 

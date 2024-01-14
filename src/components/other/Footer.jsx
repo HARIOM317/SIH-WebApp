@@ -72,43 +72,36 @@ const Footer = () => {
                 {/* Forth Column */}
                 <div className="col-6 col-lg-3">
                   <h2>Social</h2>
-                  <div className="row">
-                    <div className="col-3 mx-auto">
-                      <a href="/">
-                        <img
-                          className="icon-style"
-                          src="./images/icons/instagram.png"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="col-3 mx-auto">
-                      <a href="/">
-                        <img
-                          className="icon-style"
-                          src="./images/icons/facebook.png"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="col-3 mx-auto">
-                      <a href="/">
-                        <img
-                          className="icon-style"
-                          src="./images/icons/twitter.png"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="col-3 mx-auto">
-                      <a href="/">
-                        <img
-                          className="icon-style"
-                          src="./images/icons/whatsapp.png"
-                          alt=""
-                        />
-                      </a>
-                    </div>
+                  <div className="social-media-buttons">
+                    <a
+                      href="/"
+                      y
+                      style={{ background: "#0a63bc" }}
+                      className="link"
+                    >
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a
+                      href="/"
+                      style={{ background: "#3b5998" }}
+                      className="link"
+                    >
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a
+                      href="/"
+                      style={{ background: "#db1c8a" }}
+                      className="link"
+                    >
+                      <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a
+                      href="/"
+                      style={{ background: "#03a9f4" }}
+                      className="link"
+                    >
+                      <i class="bx bxl-twitter"></i>
+                    </a>
                   </div>
                 </div>
               </div>

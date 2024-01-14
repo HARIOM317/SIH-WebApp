@@ -1,30 +1,22 @@
-import React, { useState } from "react";
-import processFlowAPI from "../../APIs/processFlowAPI";
+import React from "react";
 
 const ProcessFlow = () => {
-  const [processFlow] = useState(processFlowAPI);
   return (
     <>
-      <section className="service-main-container homepage">
-        <div className="container service-container">
-          <h1 className="main-heading text-center">SIH - 2K24 Process Flow</h1>
-
+      <section className="sih-process">
+        <div className="container">
           <div className="row">
-            {processFlow.map((element) => {
-              const { id, logo, title, info } = element;
-              return (
-                <>
-                  <div
-                    className="col-11 col-lg-4 col-xxl-4 sih-process-sub-div container"
-                    key={id}
-                  >
-                    <i className={`font-awesome-style ${logo}`}></i>
-                    <h2 className="sub-heading">{title}</h2>
-                    <p className="paragraph">{info}</p>
-                  </div>
-                </>
-              );
-            })}
+            {/* Left Side */}
+            <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+              <h2>Process Flow</h2>
+            </div>
+
+            {/* Right Side */}
+            <div className="col-12 col-lg-6 d-flex justify-content-center flex-column align-items-start">
+              <div className="process-flow">
+                <img src="./images/process_flow.png" alt="Process Flow" />
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@ import "../../stylesheets/Error404PageStyle.css";
 const Error404 = () => {
   return (
     <>
-      <section id="not-found">
+      <section id="not-found" className="margin-top-ultra-max">
         <div className="container">
           <div className="page-not-found">
             <Lottie

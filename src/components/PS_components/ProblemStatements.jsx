@@ -6,7 +6,7 @@ const ProblemStatements = () => {
   const [data] = useState(problemStatementsAPI);
   return (
     <>
-      <section className="container problem-statements">
+      <section className="container problem-statements margin-top-ultra-max">
         <div className="table-responsive">
           <table class="table">
             <thead>
