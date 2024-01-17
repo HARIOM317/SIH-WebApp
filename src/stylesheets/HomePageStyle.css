@@ -2,10 +2,10 @@
 .homepage {
   padding: 0 2rem !important;
 }
-
+/* 
 header {
   width: 100%;
-}
+} */
 
 h3.sih-offers {
   font-size: 2rem;
@@ -51,6 +51,12 @@ h3.sih-offers {
 .main-header-section-images .animation {
   width: 100%;
   margin: 2rem 0;
+}
+
+.main-header-container .video{
+  border: 1px solid var(--bg-black-50);
+  /* border-radius: 1rem; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Important Announcement Section */
@@ -99,7 +105,6 @@ h3.sih-offers {
   border-radius: 10px;
   max-width: max-content;
   height: 350px;
-  /* background-color: red; */
   margin: 1rem auto;
   transition: all 300ms ease-in;
 }
@@ -173,6 +178,7 @@ h3.sih-offers {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .event-schedule h3.title {
@@ -494,14 +500,13 @@ h3.sih-offers {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 1.5rem;
+  margin: 4rem 1.5rem 1.5rem 1.5rem;
 }
 
 .developer-card .card {
   position: relative;
   width: 280px;
   height: 190px;
-  /* height: 350px; */
   background: var(--bg-black-900);
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);

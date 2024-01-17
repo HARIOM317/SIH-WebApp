@@ -1,65 +1,203 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import "../../stylesheets/NavbarStyle.css";
-import "../../index.css";
 import { NavLink } from "react-router-dom";
+import instructionPdf from "../../Assets/Guidelines/instructions.pdf";
+import ideaTemplatePPT from "../../Assets/Guidelines/Idea-Presentation-Format.pptx";
+import nominationLatter from "../../Assets/Guidelines/nomination.pdf";
+import howToApplyPdf from "../../Assets/Guidelines/how-to-apply.pdf";
 
-class Navbar extends Component {
-  state = { clicked: false };
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
+const SecondNavbar = () => {
+  const instructions = () => {
+    window.open(instructionPdf);
+  };
+  const ideaTemplate = () => {
+    window.open(ideaTemplatePPT);
+  };
+  const nomination = () => {
+    window.open(nominationLatter);
+  };
+  const howToApply = () => {
+    window.open(howToApplyPdf);
   };
 
-  render() {
-    return (
-      <>
-        <nav>
+  useEffect(() => {
+    const menu = document.querySelector(".menu");
+    const openMenuBtn = document.querySelector(".open-menu-btn");
+    const closeMenuBtn = document.querySelector(".close-menu-btn");
+
+    const handleClick = () => {
+      menu.classList.toggle("open");
+      menu.style.transition = "transform 0.5s ease";
+    };
+
+    [openMenuBtn, closeMenuBtn].forEach((btn) => {
+      btn.addEventListener("click", handleClick);
+    });
+
+    menu.addEventListener("transitionend", function () {
+      this.removeAttribute("style");
+    });
+
+    menu.querySelectorAll(".dropdown > i").forEach((arrow) => {
+      arrow.addEventListener("click", function () {
+        this.closest(".dropdown").classList.toggle("active");
+      });
+    });
+
+    return () => {
+      [openMenuBtn, closeMenuBtn].forEach((btn) => {
+        btn.removeEventListener("click", handleClick);
+      });
+      menu.removeEventListener("transitionend", handleClick);
+    };
+  }, []);
+
+  return (
+    <>
+      <header className="header">
+        <div className="nav-container">
           <NavLink to="/">
             <img src="./images/logo.png" alt="SIH" width={50} />
           </NavLink>
 
-          <div>
-            <ul
-              id="navbar"
-              className={this.state.clicked ? "#navbar active" : "#navbar"}
-            >
-              {/* Close Button */}
-              <div onClick={this.handleClick} className="close-btn">
-                <div id="mobile" onClick={this.handleClick}>
-                  <i id="bar" className="fas fa-times"></i>
-                </div>
-              </div>
+          <nav className="menu">
+            <div className="head">
+              <button type="button" className="close-menu-btn"></button>
+            </div>
 
+            <ul>
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>
-              <li>
-                <NavLink to="/explore">Explore SIH</NavLink>
+              <li className="dropdown">
+                <button className="dropdown-button">Explore SIH</button>
+                <i className="fa-solid fa-chevron-down"></i>
+
+                <ul className="sub-menu">
+                  <li>
+                    <NavLink to="/about">
+                      <span>About SIH</span>
+                    </NavLink>
+                  </li>
+                  <li className="dropdown">
+                    <button className="dropdown-button">Past Events</button>
+
+                    <i className="fa-solid fa-chevron-down"></i>
+                    <ul className="sub-menu sub-menu-right">
+                      <li>
+                        <NavLink to="/explore">
+                          <span>SIH 2023</span>
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <NavLink to="/sih 2024">
+                      <span>SIH 2024</span>
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <NavLink to="/instructions">Guidelines</NavLink>
+              <li className="dropdown">
+                <button className="dropdown-button">Guidelines</button>
+
+                <i className="fa-solid fa-chevron-down"></i>
+                <ul className="sub-menu">
+                  <li>
+                    <NavLink onClick={instructions} target="_blank">
+                      <span>Instructions</span>
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink onClick={ideaTemplate} target="_blank">
+                      <span>Idea Template</span>
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink onClick={nomination} target="_blank">
+                      <span>Consent Letter</span>
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink onClick={howToApply} target="_blank">
+                      <span>How to Apply</span>
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
               <li>
                 <NavLink to="/problem statements">Problem Statements</NavLink>
               </li>
-              <li>
-                <NavLink to="/result">Result</NavLink>
+              <li className="dropdown">
+                <button className="dropdown-button">Result</button>
+
+                <i className="fa-solid fa-chevron-down"></i>
+                <ul className="sub-menu">
+                  <li className="dropdown">
+                    <button className="dropdown-button">
+                      Previous Year Result
+                    </button>
+
+                    <i className="fa-solid fa-chevron-down"></i>
+                    <ul className="sub-menu sub-menu-left">
+                      <li>
+                        <NavLink to="/previous year grand finale">
+                          <span>Grand Finale Teams</span>
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/previous year winners">
+                          <span>Winner of SIH 2023</span>
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li className="dropdown">
+                    <button className="dropdown-button">SIH 2024 Result</button>
+
+                    <i className="fa-solid fa-chevron-down"></i>
+                    <ul className="sub-menu sub-menu-left">
+                      <li>
+                        <NavLink to="/result">
+                          <span>Grand Finale Teams</span>
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/winners">
+                          <span>Winner of SIH 2024</span>
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
               <li>
                 <NavLink to="/contact">Contact Us</NavLink>
               </li>
-              <button className="button" type="submit">
-                Register
-              </button>
             </ul>
-          </div>
+          </nav>
+          <div className="header-right">
+            {/* Register Button For Different Devices */}
+            <a href="/" className="button">
+              Register
+            </a>
 
-          <div id="mobile" onClick={this.handleClick}>
-            <i id="bar" className="fas fa-bars"></i>
-          </div>
-        </nav>
-      </>
-    );
-  }
-}
+            <a href="/" className="icon-btn">
+              <i class="fa-solid fa-user"></i>
+            </a>
 
-export default Navbar;
+            {/* Three Line Button */}
+            <button type="button" className="open-menu-btn">
+              <span className="line line-1"></span>
+              <span className="line line-2"></span>
+              <span className="line line-3"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+    </>
+  );
+};
+
+export default SecondNavbar;

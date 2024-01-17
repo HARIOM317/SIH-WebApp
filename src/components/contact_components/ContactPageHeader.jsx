@@ -18,7 +18,10 @@ const ContactPageHeader = () => {
                 <i class="fa fa-phone"></i>
               </div>
               <h4>Helpline Number</h4>
-              <p>+91 0000000000</p>
+              <p>+91 7879261234</p>
+              <p>+91 9302765839</p>
+              <p>+91 8085619973</p>
+              <p>+91 8103519510</p>
             </div>
 
             {/* <!-- Contact Info item --> */}
@@ -27,7 +30,11 @@ const ContactPageHeader = () => {
                 <i class="fa fa-map"></i>
               </div>
               <h4>Address</h4>
-              <p>City, Pin Code, State, Country</p>
+              <p>
+                SISTec-R Sikandrabad, Ratibad, <br />
+                Bhopal, Madhya Pradesh <br />
+                462044
+              </p>
             </div>
 
             {/* <!-- Contact Info item --> */}
@@ -36,7 +43,8 @@ const ContactPageHeader = () => {
                 <i class="fa fa-envelope"></i>
               </div>
               <h4>Email</h4>
-              <p>xyz@gmail.com</p>
+              <p>sistecr.hodcs@sistec.ac.in</p>
+              <p>rohitbansal@sistec.ac.in</p>
             </div>
           </div>
         </div>

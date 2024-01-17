@@ -13,7 +13,7 @@ const timeLineAPI = [
     date: "01 February 2023",
     title: "Launch of SISTec Innovation Hackathon",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, perferendis.",
+      "Embark on the SISTec Innovation Hackathon journey, unveiling a platform for creativity and collaboration, shaping innovative solutions.",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const timeLineAPI = [
     date: "15 February 2023 - 20 February 2023",
     title: "Registration & Idea Submission",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, perferendis.",
+      "Engage in the competition by registering and submitting groundbreaking ideas, contributing to the innovation ecosystem.",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const timeLineAPI = [
     date: "21 February 2023 - 25 February 2023",
     title: "Idea Evaluation",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, perferendis.",
+      "A dedicated phase for evaluating submitted ideas, assessing their viability, creativity, and potential impact.",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const timeLineAPI = [
     date: "26 February 2023",
     title: "Announcement of Finalist",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, perferendis.",
+      "Recognize outstanding contributions as finalists are unveiled, setting the stage for the next phase of the competition.",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const timeLineAPI = [
     date: "29 February 2023",
     title: "Grand Finale",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, perferendis.",
+      "Culminate the event with the Grand Finale, where finalists showcase their innovative projects, celebrate achievements, and discover the ultimate winners.",
   },
 ];
 

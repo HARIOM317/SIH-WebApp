@@ -12,7 +12,10 @@ const CoordinatorSlider = () => {
     <>
       <section className="coordinator container patron-card">
         <div className="committee-top">
-          <img src="./images/community_images/coordinator.png" alt="Coordinators" />
+          <img
+            src="./images/community_images/coordinator.png"
+            alt="Coordinators"
+          />
           <h2>COORDINATORS</h2>
           <span>Here are some of our Coordinators</span>
           <span className="bottom-bar"></span>

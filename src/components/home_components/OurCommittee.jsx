@@ -15,9 +15,9 @@ function OurCommittee() {
   return (
     <div className="container">
       <div className="text-center  mb-5">
-        <h3 className="main-heading-center mb-2 ">Event Schedule</h3>
+        <h3 className="main-heading-center mb-2 ">Our Committee</h3>
         <span style={{ color: "var(--text-black-700)" }}>
-          Here is our event schedule
+          Here is our committee
         </span>
       </div>
 

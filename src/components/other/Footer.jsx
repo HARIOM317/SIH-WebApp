@@ -58,13 +58,13 @@ const Footer = () => {
                   <h2>Contact</h2>
                   <ul>
                     <li>
-                      <a href="/">+91 12345 12345</a>
+                      <a href="/">+91 7879261234</a>
                     </li>
                     <li>
-                      <a href="/">sih2024@gmail.com</a>
+                      <a href="/">sistecr.hodcs@sistec.ac.in</a>
                     </li>
                     <li>
-                      <a href="/">City, Street - Pin Code</a>
+                      <a href="/">SISTec-R Ratibad, Bhopal, 462044</a>
                     </li>
                   </ul>
                 </div>

@@ -3,10 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import ExploreSIHPage from "./pages/ExploreSIHPage";
+import SIH2024Page from "./pages/SIH2024Page";
+import AboutSIHPage from "./pages/AboutSIHPage";
+import SIH2023Page from "./pages/SIH2023Page";
 import InstructionsPage from "./pages/InstructionPage";
 import ProblemStatementsPage from "./pages/ProblemStatementPage";
-import ResultPage from "./pages/ResultPage";
+import ComingSoonResultPage from "./pages/ComingSoonResultPage";
+import PreviousYearGrandFinalePage from "./pages/PreviousYearGrandFinalePage";
+import PreviousYearWinnersPage from "./pages/PreviousYearWinnersPage";
 import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -15,10 +19,21 @@ const App = () => {
     <>
       <Routes>
         <Route exact path="/" Component={HomePage} />
-        <Route path="/explore" Component={ExploreSIHPage} />
+        <Route exact path="/sih 2024" Component={SIH2024Page} />
+        <Route exact path="/about" Component={AboutSIHPage} />
+        <Route path="/explore" Component={SIH2023Page} />
         <Route path="/instructions" Component={InstructionsPage} />
         <Route path="/problem statements" Component={ProblemStatementsPage} />
-        <Route path="/result" Component={ResultPage} />
+        <Route
+          path="/previous year grand finale"
+          Component={PreviousYearGrandFinalePage}
+        />
+        <Route
+          path="/previous year winners"
+          Component={PreviousYearWinnersPage}
+        />
+        <Route path="/result" Component={ComingSoonResultPage} />
+        <Route path="/winners" Component={ComingSoonResultPage} />
         <Route path="/contact" Component={ContactPage} />
         <Route path="*" Component={ErrorPage} />
       </Routes>
