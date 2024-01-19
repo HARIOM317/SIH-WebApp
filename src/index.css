@@ -38,12 +38,36 @@
   border-radius: 5rem;
 }
 
+/* Registration Form Stepper Color */
+.MuiStepIcon-root.MuiStepIcon-active,
+.MuiStepIcon-root.MuiStepIcon-completed {
+  color: var(--skin-color) !important;
+}
+
+.alert-message{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem 3rem 1rem;
+}
+
+.form-alert-message {
+  width: 50%;
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+}
+
 /* Common Classes */
-.margin-top-max{
+.margin-top-max {
   margin-top: 4.5rem !important;
 }
 
-.margin-top-ultra-max{
+.margin-top-ultra-max {
   margin-top: 6rem !important;
 }
 

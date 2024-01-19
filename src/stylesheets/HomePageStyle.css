@@ -2,10 +2,6 @@
 .homepage {
   padding: 0 2rem !important;
 }
-/* 
-header {
-  width: 100%;
-} */
 
 h3.sih-offers {
   font-size: 2rem;
@@ -53,9 +49,8 @@ h3.sih-offers {
   margin: 2rem 0;
 }
 
-.main-header-container .video{
+.main-header-container .video {
   border: 1px solid var(--bg-black-50);
-  /* border-radius: 1rem; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -86,6 +81,29 @@ h3.sih-offers {
 
 .announce-container .announceCard span {
   font-size: 0.75rem;
+}
+
+/* SIH Objective */
+.objective {
+  margin: 3rem auto 3rem auto;
+}
+
+.objective h3 {
+  color: var(--skin-color);
+  margin: 2rem auto;
+}
+
+.objective span {
+  font-size: 1rem;
+  color: var(--text-black-900);
+  display: inline-flex;
+  text-align: justify;
+  margin: 1rem auto;
+}
+
+.objective li{
+  color: var(--text-black-700);
+  margin: 0.5rem;
 }
 
 /* SIH Theme Section */
@@ -264,11 +282,26 @@ h3.sih-offers {
 }
 
 /* Process Flow Section Style */
+
 .sih-process h2 {
+  border: 6px solid var(--text-black-700);
   font-size: 2.5rem;
   color: var(--skin-color);
   text-transform: uppercase;
   font-weight: bold;
+  width: 400px;
+  height: 400px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--bg-black-900);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+}
+
+.sih-process h2:hover {
+  transform: scale(1.05);
 }
 
 .sih-process .process-flow {
@@ -420,7 +453,7 @@ h3.sih-offers {
   transition: all 0.3s ease-in;
 }
 
-.profile-card .media-buttons .link:hover{
+.profile-card .media-buttons .link:hover {
   transform: scale(1.1);
 }
 
@@ -462,7 +495,6 @@ h3.sih-offers {
   text-align: center;
   font-size: 12px;
 }
-
 
 /* ----- FAQs - Accordion Section ----- */
 .faq-section {
@@ -613,12 +645,22 @@ h3.sih-offers {
 /* Media Query For Responsiveness */
 
 @media (max-width: 992px) {
+  .sih-process h2 {
+    border: none;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    box-shadow: none;
+    transition: none;
+  }
+
   .process-flow {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+
   .process-flow img {
     width: 100%;
   }

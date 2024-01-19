@@ -13,6 +13,7 @@ import PreviousYearGrandFinalePage from "./pages/PreviousYearGrandFinalePage";
 import PreviousYearWinnersPage from "./pages/PreviousYearWinnersPage";
 import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
+import RegistrationPage from "./pages/RegistrationPage";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/result" Component={ComingSoonResultPage} />
         <Route path="/winners" Component={ComingSoonResultPage} />
         <Route path="/contact" Component={ContactPage} />
+        <Route path="/register" Component={RegistrationPage} />
         <Route path="*" Component={ErrorPage} />
       </Routes>
     </>

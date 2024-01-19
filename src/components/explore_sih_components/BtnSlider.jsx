@@ -9,7 +9,7 @@ export default function BtnSlider({direction, moveSlide}) {
         onClick={moveSlide}
       >
         <i
-          class={
+          className={
             direction === "next"
               ? "fa-solid fa-arrow-right-long"
               : "fa-solid fa-arrow-left-long"

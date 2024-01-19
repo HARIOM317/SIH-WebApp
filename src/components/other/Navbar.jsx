@@ -179,12 +179,12 @@ const SecondNavbar = () => {
           </nav>
           <div className="header-right">
             {/* Register Button For Different Devices */}
-            <a href="/" className="button">
+            <a href="/register" className="button">
               Register
             </a>
 
-            <a href="/" className="icon-btn">
-              <i class="fa-solid fa-user"></i>
+            <a href="/register" className="icon-btn">
+              <i className="fa-solid fa-user"></i>
             </a>
 
             {/* Three Line Button */}

@@ -37,28 +37,28 @@ const PatronsCommitteeCard = () => {
                         style={{ background: "#0a63bc" }}
                         className="link"
                       >
-                        <i class="bx bxl-linkedin"></i>
+                        <i className="bx bxl-linkedin"></i>
                       </a>
                       <a
                         href={element.facebookProfile}
                         style={{ background: "#3b5998" }}
                         className="link"
                       >
-                        <i class="bx bxl-facebook"></i>
+                        <i className="bx bxl-facebook"></i>
                       </a>
                       <a
                         href={element.instagramProfile}
                         style={{ background: "#db1c8a" }}
                         className="link"
                       >
-                        <i class="bx bxl-instagram"></i>
+                        <i className="bx bxl-instagram"></i>
                       </a>
                       <a
                         href={element.twitterProfile}
                         style={{ background: "#03a9f4" }}
                         className="link"
                       >
-                        <i class="bx bxl-twitter"></i>
+                        <i className="bx bxl-twitter"></i>
                       </a>
                     </div>
                   </div>
@@ -97,28 +97,28 @@ const PatronsCommitteeCard = () => {
                         style={{ background: "#0a63bc" }}
                         className="link"
                       >
-                        <i class="bx bxl-linkedin"></i>
+                        <i className="bx bxl-linkedin"></i>
                       </a>
                       <a
                         href={element.facebookProfile}
                         style={{ background: "#3b5998" }}
                         className="link"
                       >
-                        <i class="bx bxl-facebook"></i>
+                        <i className="bx bxl-facebook"></i>
                       </a>
                       <a
                         href={element.instagramProfile}
                         style={{ background: "#db1c8a" }}
                         className="link"
                       >
-                        <i class="bx bxl-instagram"></i>
+                        <i className="bx bxl-instagram"></i>
                       </a>
                       <a
                         href={element.twitterProfile}
                         style={{ background: "#03a9f4" }}
                         className="link"
                       >
-                        <i class="bx bxl-twitter"></i>
+                        <i className="bx bxl-twitter"></i>
                       </a>
                     </div>
                   </div>

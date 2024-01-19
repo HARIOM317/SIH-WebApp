@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,8 +16,7 @@
     "react-scripts": "5.0.1",
     "react-type-animation": "^3.2.0",
     "react-vertical-timeline-component": "^3.6.0",
-    "swiper": "^11.0.5",
-    "web-vitals": "^2.1.4"
+    "swiper": "^11.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "web-vitals": "^3.5.1"
   }
 }

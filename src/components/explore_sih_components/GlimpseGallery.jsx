@@ -114,7 +114,7 @@ const GlimpseGallery = () => {
       <section className="glimpse container">
         <div className="paddings innerWidth theme-container">
           <div className="theme-head flexColStart">
-            <span className="primaryText">Glimpse 2023</span>
+            <span className="primaryText">2023 Snapshots</span>
           </div>
 
           <Swiper {...sliderSettings}>

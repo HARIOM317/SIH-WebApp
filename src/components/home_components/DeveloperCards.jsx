@@ -77,26 +77,26 @@ const DeveloperCards = () => {
                         href={element.linkedInProfile}
                         style={{ background: "#0a63bc" }}
                       >
-                        <i class="bx bxl-linkedin"></i>
+                        <i className="bx bxl-linkedin"></i>
                       </a>
 
                       <a
                         href={element.githubProfile}
                         style={{ background: "#212121" }}
                       >
-                        <i class="bx bxl-github"></i>
+                        <i className="bx bxl-github"></i>
                       </a>
                       <a
                         href={element.instagramProfile}
                         style={{ background: "#db1c8a" }}
                       >
-                        <i class="bx bxl-instagram"></i>
+                        <i className="bx bxl-instagram"></i>
                       </a>
                       <a
                         href={element.gmailProfile}
                         style={{ background: "#c74039" }}
                       >
-                        <i class="bx bxl-gmail"></i>
+                        <i className="bx bxl-gmail"></i>
                       </a>
                     </div>
                   </div>

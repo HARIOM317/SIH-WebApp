@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import {
-  firstDayMorningSchedule,
-  firstDayAfterMorningSchedule,
-  secondDayMidNightSchedule,
-  secondDayMorningSchedule,
+  firstDayMorningSchedule2k23,
+  firstDayAfterMorningSchedule2k23,
+  secondDayMidNightSchedule2k23,
+  secondDayMorningSchedule2k23,
 } from "../../APIs/eventScheduleAPI";
 
-function EventSchedule() {
-  const [firstDayMorning] = useState(firstDayMorningSchedule);
-  const [firstDayAfterMorning] = useState(firstDayAfterMorningSchedule);
-  const [secondDayMidNight] = useState(secondDayMidNightSchedule);
-  const [secondDayMorning] = useState(secondDayMorningSchedule);
+function EventSchedule2k23() {
+  const [firstDayMorning] = useState(firstDayMorningSchedule2k23);
+  const [firstDayAfterMorning] = useState(firstDayAfterMorningSchedule2k23);
+  const [secondDayMidNight] = useState(secondDayMidNightSchedule2k23);
+  const [secondDayMorning] = useState(secondDayMorningSchedule2k23);
 
   // State to track active button
   const [activeButton, setActiveButton] = useState("Day 1");
@@ -23,9 +23,9 @@ function EventSchedule() {
   return (
     <div className="container">
       <div className="text-center  mb-5">
-        <h3 className="main-heading-center mb-2 ">Event Schedule</h3>
+        <h3 className="main-heading-center mb-2 ">Event Schedule - 2023</h3>
         <span style={{ color: "var(--text-black-700)" }}>
-          Here is our event schedule
+          Here is the event schedule of SIH 2k23
         </span>
       </div>
 
@@ -55,7 +55,7 @@ function EventSchedule() {
 
       <div className="text-center">
         <p className="schedule-para">
-          The event is organised under the Computer Science and Engineering
+          The event was organised under the Computer Science and Engineering
           department at SISTec-R.
         </p>
       </div>
@@ -79,7 +79,9 @@ function EventSchedule() {
                                 <h3 className="schedule-time">
                                   <i className="fa fa-clock"></i> {element.time}
                                 </h3>
-                                <h4 className="schedule-title">{element.task}</h4>
+                                <h4 className="schedule-title">
+                                  {element.task}
+                                </h4>
                                 <p className="schedule-text">
                                   {element.description}
                                 </p>
@@ -107,7 +109,9 @@ function EventSchedule() {
                                   <i className="fa fa-clock"></i>
                                   {element.time}
                                 </h3>
-                                <h4 className="schedule-title">{element.task}</h4>
+                                <h4 className="schedule-title">
+                                  {element.task}
+                                </h4>
                                 <p className="schedule-text">
                                   {element.description}
                                 </p>
@@ -143,7 +147,9 @@ function EventSchedule() {
                                 <h3 className="schedule-time">
                                   <i className="fa fa-clock"></i> {element.time}
                                 </h3>
-                                <h4 className="schedule-title">{element.task}</h4>
+                                <h4 className="schedule-title">
+                                  {element.task}
+                                </h4>
                                 <p className="schedule-text">
                                   {element.description}
                                 </p>
@@ -171,7 +177,9 @@ function EventSchedule() {
                                   <i className="fa fa-clock"></i>
                                   {element.time}
                                 </h3>
-                                <h4 className="schedule-title">{element.task}</h4>
+                                <h4 className="schedule-title">
+                                  {element.task}
+                                </h4>
                                 <p className="schedule-text">
                                   {element.description}
                                 </p>
@@ -192,4 +200,4 @@ function EventSchedule() {
   );
 }
 
-export default EventSchedule;
+export default EventSchedule2k23;

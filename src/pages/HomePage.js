@@ -12,6 +12,7 @@ import SIHTimeLine from "../components/home_components/SIHTimeLine";
 import EventSchedule from "../components/home_components/EventSchedule";
 import OurCommittee from "../components/home_components/OurCommittee";
 import DeveloperCards from "../components/home_components/DeveloperCards";
+import Objective from "../components/home_components/Objective";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
       <TopSlider />
       <HomePageHeader />
       <AnnouncementTab />
+      <Objective />
       <ThemeSlider />
       <ProcessFlow />
       <SIHTimeLine />

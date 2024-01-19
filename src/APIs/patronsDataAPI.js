@@ -1,3 +1,5 @@
+// ========== SIH 2024 ==========
+
 // 1. Patrons and Chief Patrons Data
 // 1.1 Patrons Data
 const patronsDataAPI = [
@@ -41,7 +43,7 @@ const patronsDataAPI = [
 const chiefPatronsDataAPI = [
   {
     id: 1,
-    photo: "./images/community_images/Chief Patrons/sudir_agrawal_md.jpg",
+    photo: "./images/community_images/Chief Patrons/vcsirRGPV.png",
     name: "Dr. Sunil Kumar Gupta ",
     bio: "Vice-Chancellor,RGPV ",
     linkedInProfile: "https://www.linkedin.com/in/sunil-kumar-195862194",
@@ -52,7 +54,7 @@ const chiefPatronsDataAPI = [
 
   {
     id: 2,
-    photo: "./images/community_images/Chief Patrons/vcsirRGPV.png",
+    photo: "./images/community_images/Chief Patrons/sudir_agrawal_md.jpg",
     name: "Mr.Sudhir Kumar Agrawal",
     bio: "Hon'ble Chairman,Sagar Group",
     linkedInProfile: "https://www.linkedin.com/in/sudhir-agarwal-12a959153",
@@ -374,3 +376,73 @@ export {
   advisoryCommitteeDataAPI,
   coordinatorsDataAPI,
 };
+
+// ========== SIH 2023 ==========
+
+// Special Guest of SIH 2023
+const specialGuest2k23API = [
+  {
+    id: 1,
+    photo: "./images/community_images/Advisory-Committee/Mr.Yogesh Khakre.jpeg",
+    name: "Mr. Yogesh Khakre",
+    bio: "COO Bhopal Smart City Ltd.",
+    linkedInProfile: "https://www.linkedin.com/in/yogesh-khakre",
+    twitterProfile: "https://x.com/YogeshKhakre?s=20",
+    instagramProfile:
+      "https://www.instagram.com/yogeshkhakre?igsh=MTIzOWk3NzJ5ajdxNA==",
+    facebookProfile: "https://www.facebook.com/yogesh.khakre",
+  },
+
+  {
+    id: 2,
+    photo:
+      "./images/community_images/Advisory-Committee/Dr.Shikha Agrawal.jpeg",
+    name: "Dr. Shikha Agrawal",
+    bio: "Director T&P RGPV Bhopal",
+    linkedInProfile: "https://www.linkedin.com/in/dr-shikha-agrawal-349626a0",
+    twitterProfile: "",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+
+  {
+    id: 3,
+    photo: "./images/community_images/Advisory-Committee/Mr. Sudesh More.jpeg",
+    name: "Mr. Sudesh Morey",
+    bio: "Director DRMZ Tech",
+    linkedInProfile: "https://www.linkedin.com/in/sudesh-morey-1007218",
+    twitterProfile: "",
+    instagramProfile:
+      "https://www.instagram.com/sudeshmorey?igsh=MTM2eWR6ZTc1cm5zbg==",
+    facebookProfile: "https://www.facebook.com/sudeshmorey",
+  },
+];
+
+// Guest of Honour SIH 2023
+const guestOfHonour2k23API = [
+  {
+    id: 1,
+    photo: "./images/community_images/Advisory-Committee/Mr.Yogesh Khakre.jpeg",
+    name: "Mr. Yogesh Khakre",
+    bio: "COO Bhopal Smart City Ltd.",
+    linkedInProfile: "https://www.linkedin.com/in/yogesh-khakre",
+    twitterProfile: "https://x.com/YogeshKhakre?s=20",
+    instagramProfile:
+      "https://www.instagram.com/yogeshkhakre?igsh=MTIzOWk3NzJ5ajdxNA==",
+    facebookProfile: "https://www.facebook.com/yogesh.khakre",
+  },
+
+  {
+    id: 2,
+    photo: "./images/community_images/Advisory-Committee/Mr. Sudesh More.jpeg",
+    name: "Mr. Sudesh Morey",
+    bio: "Director DRMZ Tech",
+    linkedInProfile: "https://www.linkedin.com/in/sudesh-morey-1007218",
+    twitterProfile: "",
+    instagramProfile:
+      "https://www.instagram.com/sudeshmorey?igsh=MTM2eWR6ZTc1cm5zbg==",
+    facebookProfile: "https://www.facebook.com/sudeshmorey",
+  },
+];
+
+export { specialGuest2k23API, guestOfHonour2k23API };

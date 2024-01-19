@@ -27,15 +27,12 @@ const HomePageHeader = () => {
               </h3>
 
               <p className="main-header-para">
-                Hey, tech enthusiasts! Ready to dive into the SISTec
-                Innovation Hackathon? Imagine a day filled with coding
-                adventures, problem-solving highs, and a chance to showcase your
-                genius. Join us from Your College for an incredible competition
-                that's not just about code – it's about sparking innovation.
-                Connect with industry experts, win cool prizes, and level up
-                your skills. Whether you're a seasoned coder or just starting,
-                this is your moment to shine. Save the date for a day of coding,
-                collaboration, and celebrating your awesomeness! See you there!
+                SISTec Innovation Hackathon is a nationwide initiative to
+                provide a platform for students to solve some of the pressing
+                problems we face in our daily life, and thus inculcate a culture
+                of product innovation and a problem-solving mindset. The event
+                will encourage out-of-the-box thinking among young minds,
+                especially engineering students from across India
               </p>
 
               <button className="my-btn">Register Now</button>

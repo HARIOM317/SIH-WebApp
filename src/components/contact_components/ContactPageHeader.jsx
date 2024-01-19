@@ -6,16 +6,16 @@ const ContactPageHeader = () => {
     <>
       <section className="contact margin-top-ultra-max">
         <div className="container">
-          <h3 class="contact-title pad-15">HAVE YOU ANY QUESTION?</h3>
-          <h4 class="contact-sub-title pad-15">
+          <h3 className="contact-title pad-15">HAVE YOU ANY QUESTION?</h3>
+          <h4 className="contact-sub-title pad-15">
             WE ARE ALWAYS AT YOUR SERVICES
           </h4>
 
-          <div class="row">
+          <div className="row">
             {/* <!-- Contact Info item --> */}
-            <div class="contact-info-item pad-15">
-              <div class="icon">
-                <i class="fa fa-phone"></i>
+            <div className="contact-info-item pad-15">
+              <div className="icon">
+                <i className="fa fa-phone"></i>
               </div>
               <h4>Helpline Number</h4>
               <p>+91 7879261234</p>
@@ -25,9 +25,9 @@ const ContactPageHeader = () => {
             </div>
 
             {/* <!-- Contact Info item --> */}
-            <div class="contact-info-item pad-15">
-              <div class="icon">
-                <i class="fa fa-map"></i>
+            <div className="contact-info-item pad-15">
+              <div className="icon">
+                <i className="fa fa-map"></i>
               </div>
               <h4>Address</h4>
               <p>
@@ -38,9 +38,9 @@ const ContactPageHeader = () => {
             </div>
 
             {/* <!-- Contact Info item --> */}
-            <div class="contact-info-item pad-15">
-              <div class="icon">
-                <i class="fa fa-envelope"></i>
+            <div className="contact-info-item pad-15">
+              <div className="icon">
+                <i className="fa fa-envelope"></i>
               </div>
               <h4>Email</h4>
               <p>sistecr.hodcs@sistec.ac.in</p>

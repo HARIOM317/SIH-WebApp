@@ -22,7 +22,7 @@ const PreviousYearGrandFinaleTeams = () => {
         </Form>
 
         <div className="table-responsive">
-          <table class="table">
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">S. No.</th>

@@ -9,43 +9,60 @@ import {
 const timeLineAPI = [
   {
     id: 1,
-    icon: "fa-solid fa-rocket",
-    date: "01 February 2023",
-    title: "Launch of SISTec Innovation Hackathon",
+    icon: "fa-solid fa-calendar-check",
+    date: "September 2023",
+    title: "Planning of SIH 2.0",
     description:
-      "Embark on the SISTec Innovation Hackathon journey, unveiling a platform for creativity and collaboration, shaping innovative solutions.",
+      "We kickstart the exciting journey of SISTec Innovation Hackathon 2.0 by laying down our plans and strategies for a fantastic event.",
   },
+
   {
     id: 2,
-    icon: "fa-solid fa-address-card",
-    date: "15 February 2023 - 20 February 2023",
-    title: "Registration & Idea Submission",
+    icon: "fa-solid fa-hands-bound",
+    date: "10 September 2023 - 31 December 2023",
+    title: "Problem and Fund Collection",
     description:
-      "Engage in the competition by registering and submitting groundbreaking ideas, contributing to the innovation ecosystem.",
+      "From September to December 2023, we're actively gathering both intriguing problem statements and necessary funds to make SIH 2.0 a huge success.",
   },
   {
     id: 3,
-    icon: "fa-solid fa-lightbulb",
-    date: "21 February 2023 - 25 February 2023",
-    title: "Idea Evaluation",
+    icon: "fa-solid fa-rocket",
+    date: "01 January 2024",
+    title: "Problem Statements Release to Participants",
     description:
-      "A dedicated phase for evaluating submitted ideas, assessing their viability, creativity, and potential impact.",
+      "Come January 1, 2024, we unveil the challenges, releasing problem statements for all enthusiastic participants.",
   },
   {
     id: 4,
-    icon: "fa-solid fa-bullhorn",
-    date: "26 February 2023",
-    title: "Announcement of Finalist",
+    icon: "fa-solid fa-lightbulb",
+    date: "12 January 2024",
+    title: "Idea Submissions",
     description:
-      "Recognize outstanding contributions as finalists are unveiled, setting the stage for the next phase of the competition.",
+      "Starting January 12, 2024, participants are invited to submit their innovative ideas for the revealed problem statements.",
   },
   {
     id: 5,
-    icon: "fa-solid fa-trophy",
-    date: "29 February 2023",
+    icon: "fa-solid fa-bullhorn",
+    date: "17 January 2024",
+    title: "Finalist Announcement",
+    description:
+      "On January 17, 2024, we proudly announce the finalists whose exceptional ideas have earned them a spot in the limelight.",
+  },
+  {
+    id: 6,
+    icon: "fa-solid fa-flag",
+    date: "29 February 2024",
     title: "Grand Finale",
     description:
-      "Culminate the event with the Grand Finale, where finalists showcase their innovative projects, celebrate achievements, and discover the ultimate winners.",
+      "The much-anticipated Grand Finale unfolds on February 29, 2024, where the best ideas compete for top honors.",
+  },
+  {
+    id: 7,
+    icon: "fa-solid fa-trophy",
+    date: "01 March 2024",
+    title: "Prize Distribution",
+    description:
+      "March 1, 2024, marks the culmination of SIH 2.0 as we distribute prizes, celebrating the brilliance and innovation that defined this incredible journey.",
   },
 ];
 
@@ -67,7 +84,7 @@ const SIHTimeLine = () => {
                     alignItems: "center",
                     fontSize: "1.5rem",
                   }}
-                  icon={<i class={item.icon}></i>}
+                  icon={<i className={item.icon}></i>}
                   date={item.date}
                 >
                   <h3 className="timeline-heading">{item.title}</h3>
