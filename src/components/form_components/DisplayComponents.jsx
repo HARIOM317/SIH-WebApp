@@ -71,12 +71,13 @@ export const renderSelect = ({
 };
 
 // For Button
-export const renderButton = ({ label, variant, color, handleOnClick }) => (
+export const renderButton = ({ label, variant, color, handleOnClick, disabled }) => (
   <Button
     variant={variant ? variant : "outlined"}
     color={color ? color : "primary"}
     size="small"
     onClick={handleOnClick}
+    disabled={disabled}
   >
     {label}
   </Button>

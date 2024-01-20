@@ -35,7 +35,7 @@ const HomePageHeader = () => {
                 especially engineering students from across India
               </p>
 
-              <button className="my-btn">Register Now</button>
+                <a href="/register" className="my-btn">Register Now</a>
             </div>
 
             {/* Main Header Right Side */}

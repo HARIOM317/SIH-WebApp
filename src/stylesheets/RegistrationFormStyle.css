@@ -1,0 +1,64 @@
+.upload-box{
+    width: 100%;
+    background: transparent;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.upload-box .drag-area{
+    height: 200px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed var(--skin-color);
+}
+
+.upload-box .drag-area .custom-file-input {
+  background: var(--skin-gradient);
+  color: white;
+  padding: 0.75rem;
+  font-family: sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1.5rem auto;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in;
+}
+.upload-box .drag-area .custom-file-input:hover{
+    transform: scale(1.025);
+}
+
+.file-name {
+  margin-top: 10px;
+  color: var(--text-black-700);
+}
+
+.qr-code{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code img{
+  width: 50%;
+}
+
+.final-heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--skin-color);
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.final-para{
+  color: var(--text-black-700);
+  text-align: center;
+  font-size: 1rem;
+}

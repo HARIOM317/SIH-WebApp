@@ -16,7 +16,7 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
 
       {/* Row 1 */}
       <Grid container spacing={4} style={{ marginBottom: "10px" }}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Leader Name",
             name: "leaderName",
@@ -25,7 +25,7 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
           })}
         </Grid>
 
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Team Name",
             name: "teamName",
@@ -37,7 +37,7 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
 
       {/* Row 2 */}
       <Grid container spacing={4} style={{ marginBottom: "10px" }}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Leader Phone",
             name: "leaderPhone",
@@ -46,7 +46,7 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
           })}
         </Grid>
 
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Leader Email",
             name: "leaderEmail",
@@ -70,7 +70,7 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
 
       {/* Row 4 */}
       <Grid container spacing={4} style={{ marginBottom: "10px" }}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderSelect({
             label: "Leader Gender",
             name: "leaderGender",
@@ -84,7 +84,7 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
           })}
         </Grid>
 
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderSelect({
             label: "Theme",
             name: "theme",

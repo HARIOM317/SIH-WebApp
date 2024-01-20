@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../../stylesheets/RegistrationFormStyle.css";
 
 import {
   Box,
@@ -15,7 +16,9 @@ import { renderText } from "./DisplayComponents";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
+import Payment from "./Payment";
 import Finished from "./Finished";
+import ReviewDetails from "./ReviewDetails";
 
 // Class Component
 class FormComponent extends Component {
@@ -142,11 +145,16 @@ class FormComponent extends Component {
         "member4Gender",
       ];
 
+      // Fields to check in the step 3
+      const step3FieldsToCheck = ["PSCode", "PSTitle"];
+
       // Check if any of the fields in the current step is empty
       const isAnyFieldEmpty =
         currentStep === 0
           ? step1FieldsToCheck.some((field) => data[field].trim() === "")
-          : step2FieldsToCheck.some((field) => data[field].trim() === "");
+          : currentStep === 1
+          ? step2FieldsToCheck.some((field) => data[field].trim() === "")
+          : step3FieldsToCheck.some((field) => data[field].trim() === "");
 
       // If every fields of current step are filled then move on next step otherwise no
       if (isAnyFieldEmpty) {
@@ -174,6 +182,7 @@ class FormComponent extends Component {
       { label: "Team Details" },
       { label: "Team Members Details" },
       { label: "Solution" },
+      { label: "Review Details" },
       { label: "Payment" },
     ];
 
@@ -206,7 +215,25 @@ class FormComponent extends Component {
             />
           );
         case 3:
-          return <Finished state={this.state.data} />;
+          return (
+            <ReviewDetails
+              state={this.state.data}
+              handleOnChange={handleOnChange}
+              handleNext={handleNext}
+              handlePrev={handlePrev}
+            />
+          );
+        case 4:
+          return (
+            <Payment
+              state={this.state}
+              handleOnChange={handleOnChange}
+              handleNext={handleNext}
+              handlePrev={handlePrev}
+            />
+          );
+        case 5:
+          return <Finished />;
 
         default:
           return (

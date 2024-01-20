@@ -3,7 +3,7 @@ import React from "react";
 const Prizes = () => {
   return (
     <>
-      <section className="announcements">
+      <section className="announcements prizes">
         <div className="paddings innerWidth flexCenter announce-container">
           <div className="announceCard">
             <img

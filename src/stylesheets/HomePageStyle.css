@@ -1,6 +1,7 @@
 /* ----- HomePage Header Section ----- */
 .homepage {
   padding: 0 2rem !important;
+  margin-top: 3rem;
 }
 
 h3.sih-offers {
@@ -18,6 +19,14 @@ h3.sih-offers {
 .main-header-container {
   display: flex;
   padding-bottom: 7.5rem;
+}
+
+.homepage .main-header-container .my-btn {
+  text-decoration: none;
+}
+
+.homepage .main-header-container .my-btn:hover {
+  color: white;
 }
 
 .homepage .hello {
@@ -62,7 +71,7 @@ h3.sih-offers {
 
 .announce-container .announceCard {
   flex: 0 0 20%;
-  height: 180px;
+  height: 200px;
   text-align: center;
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--secondary-color);
@@ -85,7 +94,8 @@ h3.sih-offers {
 
 /* SIH Objective */
 .objective {
-  margin: 3rem auto 3rem auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .objective h3 {
@@ -93,15 +103,14 @@ h3.sih-offers {
   margin: 2rem auto;
 }
 
-.objective span {
+.objective p {
   font-size: 1rem;
   color: var(--text-black-900);
-  display: inline-flex;
   text-align: justify;
   margin: 1rem auto;
 }
 
-.objective li{
+.objective li {
   color: var(--text-black-700);
   margin: 0.5rem;
 }
@@ -692,6 +701,10 @@ h3.sih-offers {
     margin-top: 2rem;
   }
 
+  .theme-container .primaryText {
+    font-size: 1.5rem;
+  }
+
   .developer-card {
     flex-direction: column;
   }
@@ -712,5 +725,9 @@ h3.sih-offers {
 @media (max-width: 576px) {
   .announce-container .announceCard h3 {
     text-transform: capitalize;
+  }
+
+  .theme-container .primaryText {
+    font-size: 1rem;
   }
 }

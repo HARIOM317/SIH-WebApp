@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.banner img{
+  width: 100vw;
+}
+
 /* Winners Slider Section */
 /* ================================= */
 .container-slider {
@@ -162,6 +166,62 @@
   text-align: justify;
 }
 
+
+/* Why to join SIH */
+.why-join-sih {
+  margin: 2rem auto 5rem auto;
+  padding: 2.5rem 0;
+}
+
+.why-join-sih .main-heading {
+  font-size: 32px;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sih-benefits {
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.why-join-sih .sih-benefits .font-awesome-style {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.why-join-sih .sih-benefits .sub-heading {
+  margin: 1rem;
+  color: var(--skin-color);
+  text-transform: uppercase;
+  text-align: start;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+
+/* Media Query */
+
+@media (min-width: 1400px) {
+  .sih-container .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .sih-container .col-lg-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: 2.5rem auto;
+  }
+
+  .sih-benefits {
+    margin: 3rem 0;
+  }
+}
+
+
 @media screen and (max-width: 1300px) {
   .container-slider .btn-slide {
     width: 40px !important;
@@ -210,5 +270,9 @@
   .container-slider .dot {
     width: 8px;
     height: 8px;
+  }
+
+  .prizes .announceCard {
+    flex: 0 0 100%;
   }
 }

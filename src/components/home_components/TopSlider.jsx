@@ -16,11 +16,13 @@ const TopSlider = () => {
               return (
                 <>
                   <div className={item.classes}>
-                    <img
-                      src={item.imagePath}
-                      className="d-block w-100"
-                      alt="Card"
-                    />
+                    <a href={item.link}>
+                      <img
+                        src={item.imagePath}
+                        className="d-block w-100"
+                        alt="Card"
+                      />
+                    </a>
                   </div>
                 </>
               );

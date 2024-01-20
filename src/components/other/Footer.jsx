@@ -1,7 +1,17 @@
 import React from "react";
 import "../../stylesheets/FooterStyle.css";
+import instructionPdf from "../../Assets/Guidelines/instructions.pdf";
+import ideaTemplatePPT from "../../Assets/Guidelines/Idea-Presentation-Format.pptx";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
+  const instructions = () => {
+    window.open(instructionPdf);
+  };
+  const ideaTemplate = () => {
+    window.open(ideaTemplatePPT);
+  };
+
   return (
     <>
       <footer>
@@ -14,19 +24,19 @@ const Footer = () => {
                   <h2>SIH</h2>
                   <ul>
                     <li>
-                      <a href="/">Home</a>
+                      <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
-                      <a href="/">About SIH</a>
+                      <NavLink to="/about">About SIH</NavLink>
                     </li>
                     <li>
-                      <a href="/">Process Flow</a>
+                      <NavLink to="/sih 2024">SIH 2024</NavLink>
                     </li>
                     <li>
-                      <a href="/">Timeliness</a>
+                      <NavLink to="/explore">Past Event</NavLink>
                     </li>
                     <li>
-                      <a href="/">Contact</a>
+                      <NavLink to="/contact">Contact</NavLink>
                     </li>
                   </ul>
                 </div>
@@ -36,19 +46,23 @@ const Footer = () => {
                   <h2>Participants</h2>
                   <ul>
                     <li>
-                      <a href="/">Instructions</a>
+                      <NavLink onClick={instructions} target="_blank">
+                        Instructions
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="/">How to Apply</a>
+                      <NavLink to="/">How to Apply</NavLink>
                     </li>
                     <li>
-                      <a href="/">Problem Statements</a>
+                      <NavLink onClick={ideaTemplate} target="_blank">
+                        Idea Template
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="/">Result</a>
+                      <NavLink to="/result">Result</NavLink>
                     </li>
                     <li>
-                      <a href="/">FAQs</a>
+                      <a href="#faq">FAQs</a>
                     </li>
                   </ul>
                 </div>
@@ -58,13 +72,20 @@ const Footer = () => {
                   <h2>Contact</h2>
                   <ul>
                     <li>
-                      <a href="/">+91 7879261234</a>
+                      <NavLink to="/">+91 7879261234</NavLink>
                     </li>
                     <li>
-                      <a href="/">sistecr.hodcs@sistec.ac.in</a>
+                      <NavLink to="mailto:sistecr.hodcs@sistec.ac.in">
+                        sistecr.hodcs@sistec.ac.in
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="/">SISTec-R Ratibad, Bhopal, 462044</a>
+                      <NavLink
+                        to="https://www.google.com/maps/place/Sagar+Institute+of+Science,+Technology+%26+Research,+Ratibad/@23.1814688,77.285904,15z/data=!4m10!1m2!2m1!1sSISTec-R+Ratibad,+Bhopal,+462044!3m6!1s0x397c5c3c7b0aa7e1:0xf4798e9656dfb029!8m2!3d23.1814693!4d77.3016453!15sCiBTSVNUZWMtUiBSYXRpYmFkLCBCaG9wYWwsIDQ2MjA0NFogIh5zaXN0ZWMgciByYXRpYmFkIGJob3BhbCA0NjIwNDSSAQdjb2xsZWdlmgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVI1YUhCWFV6Tm5SUkFC4AEA!16s%2Fm%2F0t_fqww?entry=ttu"
+                        target="_blank"
+                      >
+                        SISTec-R Ratibad, Bhopal, 462044
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -73,35 +94,39 @@ const Footer = () => {
                 <div className="col-6 col-lg-3">
                   <h2>Social</h2>
                   <div className="social-media-buttons">
-                    <a
-                      href="/"
+                    <NavLink
+                      to="https://www.linkedin.com/school/sagar-institute-of-science-technology-research-sistec-r/"
                       y
                       style={{ background: "#0a63bc" }}
                       className="link"
+                      target="_blank"
                     >
                       <i className="bx bxl-linkedin"></i>
-                    </a>
-                    <a
-                      href="/"
+                    </NavLink>
+                    <NavLink
+                      to="https://www.facebook.com/sagargroupofinstitutionssistecratibad"
                       style={{ background: "#3b5998" }}
                       className="link"
+                      target="_blank"
                     >
                       <i className="bx bxl-facebook"></i>
-                    </a>
-                    <a
-                      href="/"
+                    </NavLink>
+                    <NavLink
+                      to="https://www.instagram.com/sistecratibad?igsh=ZXQ5ZWtlbDNlcm94"
                       style={{ background: "#db1c8a" }}
                       className="link"
+                      target="_blank"
                     >
                       <i className="bx bxl-instagram"></i>
-                    </a>
-                    <a
-                      href="/"
+                    </NavLink>
+                    <NavLink
+                      to="https://x.com/SISTecRatibad?s=20"
                       style={{ background: "#03a9f4" }}
                       className="link"
+                      target="_blank"
                     >
                       <i className="bx bxl-twitter"></i>
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>

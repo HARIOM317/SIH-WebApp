@@ -7,21 +7,21 @@ const developerDataAPI = [
     name: "Hariom Singh",
     bio: "Frontend Developer",
     phone: "+91 9302765839",
-    linkedInProfile: "",
-    githubProfile: "",
-    instagramProfile: "",
-    gmailProfile: "",
+    linkedInProfile: "https://www.linkedin.com/in/hariom-singh-rajput",
+    githubProfile: "https://github.com/HARIOM317",
+    instagramProfile: "https://www.instagram.com/hariomsinghrajput_",
+    gmailProfile: "mailto:hariomsinghrajput484@gmail.com",
   },
   {
     id: 2,
-    photo: "./images/developer_photos/hariom.jpg",
+    photo: "./images/developer_photos/harsh.jpg",
     name: "Harsh Kamde",
     bio: "Backend Developer",
     phone: "+91 8085619973",
-    linkedInProfile: "",
-    githubProfile: "",
-    instagramProfile: "",
-    gmailProfile: "",
+    linkedInProfile: "https://www.linkedin.com/in/harsh-kamde",
+    githubProfile: "https://github.com/harsh-kamde",
+    instagramProfile: "/",
+    gmailProfile: "mailto:harshkamde4321@gmail.com",
   },
   {
     id: 3,
@@ -29,10 +29,10 @@ const developerDataAPI = [
     name: "Kapil Kumar",
     bio: "Individual Developer",
     phone: "+91 8103519510",
-    linkedInProfile: "",
-    githubProfile: "",
-    instagramProfile: "",
-    gmailProfile: "",
+    linkedInProfile: "https://www.linkedin.com/in/kapil-mahar-ba4115249",
+    githubProfile: "https://github.com/Kapilmahar987",
+    instagramProfile: "https://www.instagram.com/",
+    gmailProfile: "mailto:maharkapil9@gmail.com",
   },
 ];
 
@@ -76,6 +76,7 @@ const DeveloperCards = () => {
                       <a
                         href={element.linkedInProfile}
                         style={{ background: "#0a63bc" }}
+                        target="_blank"
                       >
                         <i className="bx bxl-linkedin"></i>
                       </a>
@@ -83,18 +84,21 @@ const DeveloperCards = () => {
                       <a
                         href={element.githubProfile}
                         style={{ background: "#212121" }}
+                        target="_blank"
                       >
                         <i className="bx bxl-github"></i>
                       </a>
                       <a
                         href={element.instagramProfile}
                         style={{ background: "#db1c8a" }}
+                        target="_blank"
                       >
                         <i className="bx bxl-instagram"></i>
                       </a>
                       <a
                         href={element.gmailProfile}
                         style={{ background: "#c74039" }}
+                        target="_blank"
                       >
                         <i className="bx bxl-gmail"></i>
                       </a>

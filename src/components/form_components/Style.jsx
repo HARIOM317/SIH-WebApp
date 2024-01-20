@@ -1,7 +1,6 @@
 export const Style = {
   formContainer: {
     width: "100%",
-    // height: "98vh",
     display: "flex",
     flexFlow: "row Wrap",
     justifyContent: "center",
@@ -9,6 +8,6 @@ export const Style = {
   },
 
   form: {
-    minHeight: "450px",
+    minHeight: "430px",
   },
 };

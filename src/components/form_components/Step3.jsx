@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Paper, Grid, Box } from "@material-ui/core";
-import {
-  renderText,
-  renderSelect,
-  renderButton,
-} from "./DisplayComponents";
+import { renderText, renderSelect, renderButton } from "./DisplayComponents";
 
 const Step3 = ({ state, handleOnChange, handleNext, handlePrev }) => {
   const selectedTheme = state.data.theme;
+
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const isFileSelected = selectedFile !== null;
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setSelectedFile(file);
+  };
 
   let PSIDOptions;
   let PSTitleOptions;
@@ -87,7 +92,7 @@ const Step3 = ({ state, handleOnChange, handleNext, handlePrev }) => {
 
       {/* Row 1 (Solution) */}
       <Grid container spacing={4} style={{ marginBottom: "10px" }}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderSelect({
             label: "PSID",
             name: "PSCode",
@@ -97,7 +102,7 @@ const Step3 = ({ state, handleOnChange, handleNext, handlePrev }) => {
           })}
         </Grid>
 
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderSelect({
             label: "PS Title",
             name: "PSTitle",
@@ -108,7 +113,30 @@ const Step3 = ({ state, handleOnChange, handleNext, handlePrev }) => {
         </Grid>
       </Grid>
 
-      {/* Row 2 (For Button) */}
+      {/* Row 2 (Button to choose PPT) */}
+      <Grid container spacing={4} style={{ marginBottom: "10px" }}>
+        <Grid item xs={12}>
+          <div className="upload-box">
+            <div className="drag-area">
+              <input
+                type="file"
+                name="file"
+                style={{ display: "none" }}
+                id="file-input"
+                onChange={handleFileChange}
+              />
+              <label htmlFor="file-input" className="custom-file-input">
+                Choose PPT
+              </label>
+              <div className="file-name">
+                {selectedFile ? selectedFile.name : "No file chosen"}
+              </div>
+            </div>
+          </div>
+        </Grid>
+      </Grid>
+
+      {/* Back and Next Button */}
       <Grid container spacing={4} justifyContent="flex-end">
         <Box p={2}>
           {renderButton({
@@ -119,8 +147,9 @@ const Step3 = ({ state, handleOnChange, handleNext, handlePrev }) => {
         </Box>
         <Box p={2}>
           {renderButton({
-            label: "Make Payment",
+            label: "Review Details",
             handleOnClick: handleNext,
+            disabled: !isFileSelected,
           })}
         </Box>
       </Grid>

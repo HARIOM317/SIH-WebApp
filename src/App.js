@@ -6,7 +6,6 @@ import HomePage from "./pages/HomePage";
 import SIH2024Page from "./pages/SIH2024Page";
 import AboutSIHPage from "./pages/AboutSIHPage";
 import SIH2023Page from "./pages/SIH2023Page";
-import InstructionsPage from "./pages/InstructionPage";
 import ProblemStatementsPage from "./pages/ProblemStatementPage";
 import ComingSoonResultPage from "./pages/ComingSoonResultPage";
 import PreviousYearGrandFinalePage from "./pages/PreviousYearGrandFinalePage";
@@ -23,7 +22,6 @@ const App = () => {
         <Route exact path="/sih 2024" Component={SIH2024Page} />
         <Route exact path="/about" Component={AboutSIHPage} />
         <Route path="/explore" Component={SIH2023Page} />
-        <Route path="/instructions" Component={InstructionsPage} />
         <Route path="/problem statements" Component={ProblemStatementsPage} />
         <Route
           path="/previous year grand finale"

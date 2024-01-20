@@ -7,7 +7,7 @@ const FAQs = () => {
   const [faq] = useState(faqAPI);
   return (
     <>
-      <section className="faq-section">
+      <section className="faq-section" id="faq">
         <div className="container">
           <div className="row">
             <h1 className="faq-heading">FAQs</h1>
