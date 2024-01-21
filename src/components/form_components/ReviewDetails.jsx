@@ -1,6 +1,6 @@
 import React from "react";
 import { Paper, Grid, Box } from "@material-ui/core";
-import { renderText, renderButton } from "./DisplayComponents";
+import { renderButton } from "./DisplayComponents";
 
 const ReviewDetails = ({ state, handleNext, handlePrev }) => {
   const {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Paper, Grid, Box } from "@material-ui/core";
-import { renderText, renderSelect, renderButton } from "./DisplayComponents";
+import { renderText, renderButton } from "./DisplayComponents";
 
 const Payment = ({ state, handleOnChange, handleNext, handlePrev }) => {
 

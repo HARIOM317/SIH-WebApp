@@ -1,6 +1,5 @@
 import React from "react";
 import { Paper, Grid, Box } from "@material-ui/core";
-import { renderText, renderButton } from "./DisplayComponents";
 
 
 const Finished = () => {
