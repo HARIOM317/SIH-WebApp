@@ -272,6 +272,9 @@
   .primaryText {
     font-size: 1.5rem;
   }
+  .form-alert-message{
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {

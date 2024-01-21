@@ -15,7 +15,7 @@ const Payment = ({ state, handleOnChange, handleNext, handlePrev }) => {
 
 
   return (
-    <Paper component={Box} p={2}>
+    <Paper component={Box} style={{ padding: "2rem", margin: "2rem auto" }}>
       <Box mt={1} mb={2}>
         {renderText({ label: "Scan QR to Payment", variant: "h6" })}
       </Box>
@@ -53,14 +53,14 @@ const Payment = ({ state, handleOnChange, handleNext, handlePrev }) => {
 
       {/* Back and Next Button */}
       <Grid container spacing={4} justifyContent="flex-end">
-        <Box p={2}>
+        <Box style={{ padding: "1rem" }}>
           {renderButton({
             label: "Back",
             handleOnClick: handlePrev,
             color: "default",
           })}
         </Box>
-        <Box p={2}>
+        <Box style={{ padding: "1rem" }}>
           {renderButton({
             label: "Submit",
             handleOnClick: handleNext,

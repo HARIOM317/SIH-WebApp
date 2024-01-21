@@ -62,7 +62,7 @@ export const renderSelect = ({
       onChange={handleOnChange}
     >
       {options.map((option) => (
-        <MenuItem key={option.value} value={option.value}>
+        <MenuItem key={option.value} value={option.value} style={{display: 'flex', flexDirection: 'column', alignItems: 'start', margin: '0.25rem 1rem'}}>
           {option.label}
         </MenuItem>
       ))}

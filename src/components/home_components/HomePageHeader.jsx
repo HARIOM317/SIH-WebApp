@@ -1,6 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { NavLink } from "react-router-dom";
 
 const HomePageHeader = () => {
   return (
@@ -35,7 +36,7 @@ const HomePageHeader = () => {
                 especially engineering students from across India
               </p>
 
-                <a href="/register" className="my-btn">Register Now</a>
+                <NavLink to="/register" className="my-btn">Register Now</NavLink>
             </div>
 
             {/* Main Header Right Side */}

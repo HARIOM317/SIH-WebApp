@@ -9,7 +9,7 @@ import {
 
 const Step1 = ({ state, handleOnChange, handleNext }) => {
   return (
-    <Paper component={Box} p={2}>
+    <Paper component={Box} style={{padding: '2rem', margin: '2rem auto'}}>
       <Box mt={1} mb={2}>
         {renderText({ label: "Team Details", variant: "h6" })}
       </Box>
@@ -103,7 +103,7 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
 
       {/* Row 5 (For Button) */}
       <Grid container spacing={4} justifyContent="flex-end">
-        <Box p={2}>
+        <Box style={{padding: '1rem'}}>
           {renderButton({
             label: "Next",
             handleOnClick: handleNext,

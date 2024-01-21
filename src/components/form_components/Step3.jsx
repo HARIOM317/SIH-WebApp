@@ -6,12 +6,19 @@ const Step3 = ({ state, handleOnChange, handleNext, handlePrev }) => {
   const selectedTheme = state.data.theme;
 
   const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile2, setSelectedFile2] = useState(null);
 
   const isFileSelected = selectedFile !== null;
+  const isFileSelected2 = selectedFile2 !== null;
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     setSelectedFile(file);
+  };
+  
+  const handleFileChange2 = (e) => {
+    const file = e.target.files[0];
+    setSelectedFile2(file);
   };
 
   let PSIDOptions;
@@ -85,7 +92,7 @@ const Step3 = ({ state, handleOnChange, handleNext, handlePrev }) => {
   }
 
   return (
-    <Paper component={Box} p={2}>
+    <Paper component={Box} style={{ padding: "2rem", margin: "2rem auto" }}>
       <Box mt={1} mb={2}>
         {renderText({ label: "Solution", variant: "h6" })}
       </Box>
@@ -115,12 +122,12 @@ const Step3 = ({ state, handleOnChange, handleNext, handlePrev }) => {
 
       {/* Row 2 (Button to choose PPT) */}
       <Grid container spacing={4} style={{ marginBottom: "10px" }}>
-        <Grid item xs={12}>
+        <Grid item xs={12} lg={6}>
           <div className="upload-box">
             <div className="drag-area">
               <input
                 type="file"
-                name="file"
+                name="file1"
                 style={{ display: "none" }}
                 id="file-input"
                 onChange={handleFileChange}
@@ -134,22 +141,42 @@ const Step3 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             </div>
           </div>
         </Grid>
+
+        <Grid item xs={12} lg={6}>
+          <div className="upload-box">
+            <div className="drag-area">
+              <input
+                type="file"
+                name="file2"
+                style={{ display: "none" }}
+                id="file-input2"
+                onChange={handleFileChange2}
+              />
+              <label htmlFor="file-input2" className="custom-file-input">
+                Choose Consent Letter
+              </label>
+              <div className="file-name">
+                {selectedFile2 ? selectedFile2.name : "No file chosen"}
+              </div>
+            </div>
+          </div>
+        </Grid>
       </Grid>
 
       {/* Back and Next Button */}
       <Grid container spacing={4} justifyContent="flex-end">
-        <Box p={2}>
+        <Box style={{ padding: "1rem" }}>
           {renderButton({
             label: "Back",
             handleOnClick: handlePrev,
             color: "default",
           })}
         </Box>
-        <Box p={2}>
+        <Box style={{ padding: "1rem" }}>
           {renderButton({
             label: "Review Details",
             handleOnClick: handleNext,
-            disabled: !isFileSelected,
+            disabled: !(isFileSelected && isFileSelected2),
           })}
         </Box>
       </Grid>

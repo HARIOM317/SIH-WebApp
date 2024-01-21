@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import sliderAPI from "../../APIs/sliderAPI";
+import { NavLink } from "react-router-dom";
 
 const TopSlider = () => {
   const [image] = useState(sliderAPI);
@@ -15,14 +16,14 @@ const TopSlider = () => {
             {image.map((item) => {
               return (
                 <>
-                  <div className={item.classes}>
-                    <a href={item.link}>
+                  <div className={item.classes} key={item.id}>
+                    <NavLink to={item.link}>
                       <img
                         src={item.imagePath}
                         className="d-block w-100"
                         alt="Card"
                       />
-                    </a>
+                    </NavLink>
                   </div>
                 </>
               );
@@ -34,7 +35,10 @@ const TopSlider = () => {
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev"
           >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
             <span className="visually-hidden">Previous</span>
           </button>
           <button
@@ -43,7 +47,10 @@ const TopSlider = () => {
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="next"
           >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
             <span className="visually-hidden">Next</span>
           </button>
         </div>

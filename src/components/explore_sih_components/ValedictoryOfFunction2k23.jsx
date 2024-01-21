@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { guestOfHonour2k23API } from "../../APIs/patronsDataAPI";
+import { NavLink } from "react-router-dom";
 
 const ValedictoryOfFunction2k23 = () => {
   const [guestOfHonour] = useState(guestOfHonour2k23API);
@@ -34,30 +35,30 @@ const ValedictoryOfFunction2k23 = () => {
               </div>
 
               <div className="media-buttons">
-                <a
-                  href="https://www.linkedin.com/in/dr-vineet-kapoor-33618019"
+                <NavLink
+                  to="https://www.linkedin.com/in/dr-vineet-kapoor-33618019"
                   style={{ background: "#0a63bc" }}
                   className="link"
                 >
                   <i className="bx bxl-linkedin"></i>
-                </a>
-                <a
-                  href="https://www.facebook.com/DrVineetKapoor"
+                </NavLink>
+                <NavLink
+                  to="https://www.facebook.com/DrVineetKapoor"
                   style={{ background: "#3b5998" }}
                   className="link"
                 >
                   <i className="bx bxl-facebook"></i>
-                </a>
-                <a href="/" style={{ background: "#db1c8a" }} className="link">
+                </NavLink>
+                <NavLink to="/" style={{ background: "#db1c8a" }} className="link">
                   <i className="bx bxl-instagram"></i>
-                </a>
-                <a
-                  href="https://x.com/vinkaps_ind?s=20"
+                </NavLink>
+                <NavLink
+                  to="https://x.com/vinkaps_ind?s=20"
                   style={{ background: "#03a9f4" }}
                   className="link"
                 >
                   <i className="bx bxl-twitter"></i>
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
@@ -89,34 +90,34 @@ const ValedictoryOfFunction2k23 = () => {
                     </div>
 
                     <div className="media-buttons">
-                      <a
-                        href={element.linkedInProfile}
+                      <NavLink
+                        to={element.linkedInProfile}
                         style={{ background: "#0a63bc" }}
                         className="link"
                       >
                         <i className="bx bxl-linkedin"></i>
-                      </a>
-                      <a
-                        href={element.facebookProfile}
+                      </NavLink>
+                      <NavLink
+                        to={element.facebookProfile}
                         style={{ background: "#3b5998" }}
                         className="link"
                       >
                         <i className="bx bxl-facebook"></i>
-                      </a>
-                      <a
-                        href={element.instagramProfile}
+                      </NavLink>
+                      <NavLink
+                        to={element.instagramProfile}
                         style={{ background: "#db1c8a" }}
                         className="link"
                       >
                         <i className="bx bxl-instagram"></i>
-                      </a>
-                      <a
-                        href={element.twitterProfile}
+                      </NavLink>
+                      <NavLink
+                        to={element.twitterProfile}
                         style={{ background: "#03a9f4" }}
                         className="link"
                       >
                         <i className="bx bxl-twitter"></i>
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                 </>

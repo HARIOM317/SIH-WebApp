@@ -28,7 +28,7 @@ const ReviewDetails = ({ state, handleNext, handlePrev }) => {
   } = state;
 
   return (
-    <Paper component={Box} p={2}>
+    <Paper component={Box} style={{ padding: "2rem", margin: "2rem auto" }}>
       {/* Displaying extracted values */}
       <Grid container spacing={4}>
         {/* Team Details */}
@@ -44,7 +44,7 @@ const ReviewDetails = ({ state, handleNext, handlePrev }) => {
               color: "var(--skin-color)",
               fontSize: "1.25rem",
               fontWeight: "bold",
-              margin: "2rem 1rem"
+              margin: "2rem 1rem",
             }}
           >
             Team Details
@@ -100,7 +100,7 @@ const ReviewDetails = ({ state, handleNext, handlePrev }) => {
               color: "var(--skin-color)",
               fontSize: "1.25rem",
               fontWeight: "bold",
-              margin: "2rem 1rem"
+              margin: "2rem 1rem",
             }}
           >
             Team Member Details
@@ -187,7 +187,7 @@ const ReviewDetails = ({ state, handleNext, handlePrev }) => {
               color: "var(--skin-color)",
               fontSize: "1.25rem",
               fontWeight: "bold",
-              margin: "2rem 1rem"
+              margin: "2rem 1rem",
             }}
           >
             Problem Statement Details
@@ -207,14 +207,14 @@ const ReviewDetails = ({ state, handleNext, handlePrev }) => {
 
       {/* Back and Next Button */}
       <Grid container spacing={4} justifyContent="flex-end">
-        <Box p={2}>
+        <Box style={{ padding: "1rem" }}>
           {renderButton({
             label: "Back",
             handleOnClick: handlePrev,
             color: "default",
           })}
         </Box>
-        <Box p={2}>
+        <Box style={{ padding: "1rem" }}>
           {renderButton({
             label: "Payment",
             handleOnClick: handleNext,

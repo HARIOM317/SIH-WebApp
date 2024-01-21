@@ -6,7 +6,7 @@ import ideaTemplatePPT from "../../Assets/Guidelines/Idea-Presentation-Format.pp
 import nominationLatter from "../../Assets/Guidelines/nomination.pdf";
 import howToApplyPdf from "../../Assets/Guidelines/how-to-apply.pdf";
 
-const SecondNavbar = () => {
+const Navbar = () => {
   const instructions = () => {
     window.open(instructionPdf);
   };
@@ -179,13 +179,13 @@ const SecondNavbar = () => {
           </nav>
           <div className="header-right">
             {/* Register Button For Different Devices */}
-            <a href="/register" className="button">
+            <NavLink to="/register" className="button">
               Register
-            </a>
+            </NavLink>
 
-            <a href="/register" className="icon-btn">
+            <NavLink to="/register" className="icon-btn">
               <i className="fa-solid fa-user"></i>
-            </a>
+            </NavLink>
 
             {/* Three Line Button */}
             <button type="button" className="open-menu-btn">
@@ -200,4 +200,4 @@ const SecondNavbar = () => {
   );
 };
 
-export default SecondNavbar;
+export default Navbar;

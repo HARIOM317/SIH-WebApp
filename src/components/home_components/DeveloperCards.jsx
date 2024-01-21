@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const developerDataAPI = [
   {
@@ -73,35 +74,35 @@ const DeveloperCards = () => {
                     </div>
 
                     <div className="social-btn">
-                      <a
-                        href={element.linkedInProfile}
+                      <NavLink
+                        to={element.linkedInProfile}
                         style={{ background: "#0a63bc" }}
                         target="_blank"
                       >
                         <i className="bx bxl-linkedin"></i>
-                      </a>
+                      </NavLink>
 
-                      <a
-                        href={element.githubProfile}
+                      <NavLink
+                        to={element.githubProfile}
                         style={{ background: "#212121" }}
                         target="_blank"
                       >
                         <i className="bx bxl-github"></i>
-                      </a>
-                      <a
-                        href={element.instagramProfile}
+                      </NavLink>
+                      <NavLink
+                        to={element.instagramProfile}
                         style={{ background: "#db1c8a" }}
                         target="_blank"
                       >
                         <i className="bx bxl-instagram"></i>
-                      </a>
-                      <a
-                        href={element.gmailProfile}
+                      </NavLink>
+                      <NavLink
+                        to={element.gmailProfile}
                         style={{ background: "#c74039" }}
                         target="_blank"
                       >
                         <i className="bx bxl-gmail"></i>
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
