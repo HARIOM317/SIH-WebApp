@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
+
+// Pages
 import HomePage from "./pages/HomePage";
 import SIH2024Page from "./pages/SIH2024Page";
 import AboutSIHPage from "./pages/AboutSIHPage";
@@ -13,6 +15,13 @@ import PreviousYearWinnersPage from "./pages/PreviousYearWinnersPage";
 import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
 import RegistrationPage from "./pages/RegistrationPage";
+
+// Admin Pages
+import InboxAdmin from "./pages/adminPages/InboxAdmin";
+import PSAdmin from "./pages/adminPages/PSAdmin";
+import SelectedTeamsAdmin from "./pages/adminPages/SelectedTeamsAdmin";
+import RegisteredTeamsAdmin from "./pages/adminPages/RegisteredTeamsAdmin";
+import ContactAdmin from "./pages/adminPages/ContactAdmin";
 
 const App = () => {
   return (
@@ -35,6 +44,15 @@ const App = () => {
         <Route path="/winners" Component={ComingSoonResultPage} />
         <Route path="/contact" Component={ContactPage} />
         <Route path="/register" Component={RegistrationPage} />
+
+        {/* Admin Pages */}
+        <Route path="/admin" element={<InboxAdmin />} />
+        <Route path="/ps-admin" element={<PSAdmin />} />
+        <Route path="/registered teams" element={<RegisteredTeamsAdmin />} />
+        <Route path="/selected teams" element={<SelectedTeamsAdmin />} />
+        <Route path="/user-messages" element={<ContactAdmin />} />
+
+        {/* Error page */}
         <Route path="*" Component={ErrorPage} />
       </Routes>
     </>

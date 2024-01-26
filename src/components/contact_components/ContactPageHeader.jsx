@@ -18,10 +18,9 @@ const ContactPageHeader = () => {
                 <i className="fa fa-phone"></i>
               </div>
               <h4>Helpline Number</h4>
-              <p>+91 7879261234</p>
-              <p>+91 9302765839</p>
-              <p>+91 8085619973</p>
-              <p>+91 8103519510</p>
+              <p>+91 78792 61234</p>
+              <p>+91 98276 66677</p>
+              <p>+91 9584471159</p>
             </div>
 
             {/* <!-- Contact Info item --> */}
@@ -43,8 +42,9 @@ const ContactPageHeader = () => {
                 <i className="fa fa-envelope"></i>
               </div>
               <h4>Email</h4>
-              <p>sistecr.hodcs@sistec.ac.in</p>
               <p>rohitbansal@sistec.ac.in</p>
+              <p>himanshuyadav@sistec.ac.in</p>
+              <p>amitsahu@sistec.ac.in</p>
             </div>
           </div>
         </div>

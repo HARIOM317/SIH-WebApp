@@ -69,17 +69,29 @@ const advisoryCommitteeDataAPI = [
   {
     id: 1,
     photo:
-      "./images/community_images/Advisory-Committee/Dr.Sanjeev Sharma.jpeg",
-    name: "Dr. Sanjeev Sharma",
-    bio: "Deen Faculty RGPV",
-    linkedInProfile: "https://www.linkedin.com/in/sanjeev-sharma-1828623",
-    twitterProfile: "",
+      "./images/community_images/Advisory-Committee/Dr. Vineet Kapoor.jpeg",
+    name: "Dr. Vineet Kapoor",
+    bio: "DCP, Head Quarter Bhopal",
+    linkedInProfile: "https://www.linkedin.com/in/dr-vineet-kapoor-33618019",
+    twitterProfile: "https://x.com/vinkaps_ind?s=20",
     instagramProfile: "",
-    facebookProfile: "https://www.facebook.com/profile.php?id=1439324075",
+    facebookProfile: "https://www.facebook.com/DrVineetKapoor",
   },
 
   {
     id: 2,
+    photo:
+      "./images/community_images/Advisory-Committee/Mr. Shailendra Singh Chouhan.jpeg",
+    name: "Mr. Shailendra Singh Chouhan",
+    bio: "ADCP Crime Branch Bhopal",
+    linkedInProfile: "",
+    twitterProfile: "https://x.com/shailendra2006?s=20",
+    instagramProfile: "",
+    facebookProfile: "",
+  },
+
+  {
+    id: 3,
     photo: "./images/community_images/Advisory-Committee/Mr.Yogesh Khakre.jpeg",
     name: "Mr. Yogesh Khakre",
     bio: "COO Bhopal Smart City Ltd.",
@@ -88,18 +100,6 @@ const advisoryCommitteeDataAPI = [
     instagramProfile:
       "https://www.instagram.com/yogeshkhakre?igsh=MTIzOWk3NzJ5ajdxNA==",
     facebookProfile: "https://www.facebook.com/yogesh.khakre",
-  },
-
-  {
-    id: 3,
-    photo:
-      "./images/community_images/Advisory-Committee/Mr. Shantanu Chakraborty.jpg",
-    name: "Mr. Shantanu Chakraborty",
-    bio: "Strategic Consultant at Empower",
-    linkedInProfile: "https://www.linkedin.com/in/shanchakra",
-    twitterProfile: "",
-    instagramProfile: "",
-    facebookProfile: "",
   },
 
   {
@@ -128,23 +128,22 @@ const advisoryCommitteeDataAPI = [
   {
     id: 6,
     photo:
-      "./images/community_images/Advisory-Committee/Dr. Vineet Kapoor.jpeg",
-    name: "Dr. Vineet Kapoor",
-    bio: "DCP, Head Quarter Bhopal",
-    linkedInProfile: "https://www.linkedin.com/in/dr-vineet-kapoor-33618019",
-    twitterProfile: "https://x.com/vinkaps_ind?s=20",
+      "./images/community_images/Advisory-Committee/Dr.Sanjeev Sharma.jpeg",
+    name: "Dr. Sanjeev Sharma",
+    bio: "Deen Faculty RGPV",
+    linkedInProfile: "https://www.linkedin.com/in/sanjeev-sharma-1828623",
+    twitterProfile: "",
     instagramProfile: "",
-    facebookProfile: "https://www.facebook.com/DrVineetKapoor",
+    facebookProfile: "https://www.facebook.com/profile.php?id=1439324075",
   },
-
   {
     id: 7,
     photo:
-      "./images/community_images/Advisory-Committee/Mr. Shailendra Singh Chouhan.jpeg",
-    name: "Mr. Shailendra Singh Chouhan",
-    bio: "ADCP Crime Branch Bhopal",
-    linkedInProfile: "",
-    twitterProfile: "https://x.com/shailendra2006?s=20",
+      "./images/community_images/Advisory-Committee/Mr. Shantanu Chakraborty.jpg",
+    name: "Mr. Shantanu Chakraborty",
+    bio: "Strategic Consultant at Empower",
+    linkedInProfile: "https://www.linkedin.com/in/shanchakra",
+    twitterProfile: "",
     instagramProfile: "",
     facebookProfile: "",
   },

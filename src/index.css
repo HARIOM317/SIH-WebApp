@@ -206,6 +206,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
 .flexStart {
   display: flex;
   justify-content: flex-start;

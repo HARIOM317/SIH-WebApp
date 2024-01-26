@@ -72,11 +72,11 @@ const Footer = () => {
                   <h2>Contact</h2>
                   <ul>
                     <li>
-                      <NavLink to="/">+91 7879261234</NavLink>
+                      <NavLink to="/">+91 98276 66677</NavLink>
                     </li>
                     <li>
-                      <NavLink to="mailto:sistecr.hodcs@sistec.ac.in">
-                        sistecr.hodcs@sistec.ac.in
+                      <NavLink to="mailto:rohitbansal@sistec.ac.in">
+                        rohitbansal@sistec.ac.in
                       </NavLink>
                     </li>
                     <li>
