@@ -5,7 +5,7 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/SIH-WebApp">
     <React.StrictMode>
       <App />
     </React.StrictMode>

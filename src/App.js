@@ -28,8 +28,8 @@ const App = () => {
     <>
       <Routes>
         <Route exact path="/" Component={HomePage} />
-        <Route exact path="/sih 2024" Component={SIH2024Page} />
-        <Route exact path="/about" Component={AboutSIHPage} />
+        <Route path="/sih 2024" Component={SIH2024Page} />
+        <Route path="/about" Component={AboutSIHPage} />
         <Route path="/explore" Component={SIH2023Page} />
         <Route path="/problem statements" Component={ProblemStatementsPage} />
         <Route
