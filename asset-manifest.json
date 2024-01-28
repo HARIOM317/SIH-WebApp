@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/SIH-WebApp/static/css/main.05adf7ee.css",
+    "main.js": "/SIH-WebApp/static/js/main.19e20315.js",
+    "static/media/how-to-apply.pdf": "/SIH-WebApp/static/media/how-to-apply.951b64c0ced6daa31a87.pdf",
+    "static/media/Idea-Presentation-Format.pptx": "/SIH-WebApp/static/media/Idea-Presentation-Format.a2a9cdffe9aca3780149.pptx",
+    "static/media/instructions.pdf": "/SIH-WebApp/static/media/instructions.0637936145dee6a40267.pdf",
+    "static/media/nomination.pdf": "/SIH-WebApp/static/media/nomination.047b7ecf6ee7cce4e6b1.pdf",
+    "index.html": "/SIH-WebApp/index.html",
+    "main.05adf7ee.css.map": "/SIH-WebApp/static/css/main.05adf7ee.css.map",
+    "main.19e20315.js.map": "/SIH-WebApp/static/js/main.19e20315.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05adf7ee.css",
+    "static/js/main.19e20315.js"
+  ]
+}
