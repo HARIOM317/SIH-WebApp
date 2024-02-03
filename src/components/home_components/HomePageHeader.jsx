@@ -7,7 +7,6 @@ const HomePageHeader = () => {
   return (
     <>
       <section className="homepage">
-        <h1 className="hello container">What is SIH?</h1>
         <section className="container main-header-container">
           <div className="row">
             <div className="col-12 col-lg-6 header-left-side d-flex justify-content-center flex-column align-items-start order-lg-first order-last">
@@ -36,7 +35,9 @@ const HomePageHeader = () => {
                 especially engineering students from across India
               </p>
 
-                <NavLink to="/register" className="my-btn">Register Now</NavLink>
+              <NavLink to="/register" className="my-btn disabled">
+                Registration starts soon
+              </NavLink>
             </div>
 
             {/* Main Header Right Side */}

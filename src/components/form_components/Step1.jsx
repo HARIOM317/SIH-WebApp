@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Grid, Box } from "@material-ui/core";
+import { Paper, Grid, Box } from "@mui/material";
 import {
   renderText,
   renderInputText,
@@ -9,13 +9,13 @@ import {
 
 const Step1 = ({ state, handleOnChange, handleNext }) => {
   return (
-    <Paper component={Box} style={{padding: '2rem', margin: '2rem auto'}}>
+    <Paper component={Box} className="stepperPaperStyle">
       <Box mt={1} mb={2}>
         {renderText({ label: "Team Details", variant: "h6" })}
       </Box>
 
       {/* Row 1 */}
-      <Grid container spacing={4} style={{ marginBottom: "10px" }}>
+      <Grid container spacing={1} style={{ marginBottom: "10px" }}>
         <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Leader Name",
@@ -36,7 +36,7 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
       </Grid>
 
       {/* Row 2 */}
-      <Grid container spacing={4} style={{ marginBottom: "10px" }}>
+      <Grid container spacing={1} style={{ marginBottom: "10px" }}>
         <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Leader Phone",
@@ -57,7 +57,7 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
       </Grid>
 
       {/* Row 3 */}
-      <Grid container spacing={4} style={{ marginBottom: "10px" }}>
+      <Grid container spacing={1} style={{ marginBottom: "10px" }}>
         <Grid item xs={12}>
           {renderInputText({
             label: "Institute Name",
@@ -69,7 +69,7 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
       </Grid>
 
       {/* Row 4 */}
-      <Grid container spacing={4} style={{ marginBottom: "10px" }}>
+      <Grid container spacing={1} style={{ marginBottom: "10px" }}>
         <Grid item xs={12} sm={12} lg={6}>
           {renderSelect({
             label: "Leader Gender",
@@ -90,11 +90,19 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
             name: "theme",
             state: state,
             options: [
-              { value: "Theme 1", label: "Theme 1" },
-              { value: "Theme 2", label: "Theme 2" },
-              { value: "Theme 3", label: "Theme 3" },
-              { value: "Theme 4", label: "Theme 4" },
-              { value: "Theme 5", label: "Theme 5" },
+              { value: "Agri-Tech", label: "Agri-Tech" },
+              { value: "Criminal Database", label: "Criminal Database" },
+              { value: "Cyber Security", label: "Cyber Security" },
+              {
+                value: "Environment & Climate Control",
+                label: "Environment & Climate Control",
+              },
+              { value: "Edu-Tech", label: "Edu-Tech" },
+              { value: "Force Engagement", label: "Force Engagement" },
+              { value: "Health-Tech", label: "Health-Tech" },
+              { value: "Miscellaneous", label: "Miscellaneous" },
+              { value: "Social Media", label: "Social Media" },
+              { value: "Vehicle Theft", label: "Vehicle Theft" },
             ],
             handleOnChange,
           })}
@@ -102,8 +110,13 @@ const Step1 = ({ state, handleOnChange, handleNext }) => {
       </Grid>
 
       {/* Row 5 (For Button) */}
-      <Grid container spacing={4} justifyContent="flex-end">
-        <Box style={{padding: '1rem'}}>
+      <Grid
+        container
+        spacing={0}
+        justifyContent="flex-end"
+        style={{ marginTop: "1.5rem" }}
+      >
+        <Box style={{ padding: "1rem 0 0 0" }}>
           {renderButton({
             label: "Next",
             handleOnClick: handleNext,

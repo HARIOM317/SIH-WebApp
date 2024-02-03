@@ -79,21 +79,14 @@ const Navbar = () => {
                       <span>About SIH</span>
                     </NavLink>
                   </li>
-                  <li className="dropdown">
-                    <button className="dropdown-button">Past Events</button>
-
-                    <i className="fa-solid fa-chevron-down"></i>
-                    <ul className="sub-menu sub-menu-right">
-                      <li>
-                        <NavLink to="/explore">
-                          <span>SIH 2023</span>
-                        </NavLink>
-                      </li>
-                    </ul>
+                  <li>
+                    <NavLink to="/timeline">
+                      <span>Timeline</span>
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/sih 2024">
-                      <span>SIH 2024</span>
+                    <NavLink to="/schedule">
+                      <span>Program Schedule</span>
                     </NavLink>
                   </li>
                 </ul>
@@ -130,13 +123,33 @@ const Navbar = () => {
               </li>
               <li className="dropdown">
                 <button className="dropdown-button">Result</button>
+                <i className="fa-solid fa-chevron-down"></i>
+
+                <ul className="sub-menu">
+                  <li>
+                    <NavLink to="/result">
+                      <span>Grand Finale Teams</span>
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/winners">
+                      <span>Winner of SIH 2024</span>
+                    </NavLink>
+                  </li>
+                </ul>
+              </li>
+              <li className="dropdown">
+                <button className="dropdown-button">SIH 1.0</button>
 
                 <i className="fa-solid fa-chevron-down"></i>
                 <ul className="sub-menu">
+                  <li>
+                    <NavLink to="/explore">
+                      <span>SIH 2023</span>
+                    </NavLink>
+                  </li>
                   <li className="dropdown">
-                    <button className="dropdown-button">
-                      Previous Year Result
-                    </button>
+                    <button className="dropdown-button">SIH 2023 Result</button>
 
                     <i className="fa-solid fa-chevron-down"></i>
                     <ul className="sub-menu sub-menu-left">
@@ -152,24 +165,6 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </li>
-
-                  <li className="dropdown">
-                    <button className="dropdown-button">SIH 2024 Result</button>
-
-                    <i className="fa-solid fa-chevron-down"></i>
-                    <ul className="sub-menu sub-menu-left">
-                      <li>
-                        <NavLink to="/result">
-                          <span>Grand Finale Teams</span>
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/winners">
-                          <span>Winner of SIH 2024</span>
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li>
                 </ul>
               </li>
               <li>
@@ -179,11 +174,11 @@ const Navbar = () => {
           </nav>
           <div className="header-right">
             {/* Register Button For Different Devices */}
-            <NavLink to="/register" className="button">
+            <NavLink to="/register" className="button disabled">
               Register
             </NavLink>
 
-            <NavLink to="/register" className="icon-btn">
+            <NavLink to="/register" className="icon-btn disabled">
               <i className="fa-solid fa-user"></i>
             </NavLink>
 

@@ -1,4 +1,4 @@
-import { Typography, TextField, MenuItem, Button } from "@material-ui/core";
+import { Typography, TextField, MenuItem, Button } from "@mui/material";
 
 // For Text Label
 export const renderText = ({ label, align, variant }) => (
@@ -15,7 +15,6 @@ export const renderText = ({ label, align, variant }) => (
 export const renderInputText = ({
   label,
   name,
-  color,
   state,
   handleOnChange,
 }) => {
@@ -23,8 +22,8 @@ export const renderInputText = ({
   return (
     <TextField
       required
+      style={{padding: '8px 0px'}}
       label={label}
-      color={color ? color : "primary"}
       variant="standard"
       fullWidth={true}
       size="small"
@@ -41,7 +40,6 @@ export const renderInputText = ({
 export const renderSelect = ({
   label,
   name,
-  color,
   state,
   options,
   handleOnChange,
@@ -50,8 +48,8 @@ export const renderSelect = ({
   return (
     <TextField
       select
+      style={{ padding: "8px 0px" }}
       label={label}
-      color={color ? color : "primary"}
       variant="standard"
       fullWidth={true}
       size="small"
@@ -62,7 +60,16 @@ export const renderSelect = ({
       onChange={handleOnChange}
     >
       {options.map((option) => (
-        <MenuItem key={option.value} value={option.value} style={{display: 'flex', flexDirection: 'column', alignItems: 'start', margin: '0.25rem 1rem'}}>
+        <MenuItem
+          key={option.value}
+          value={option.value}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "start",
+            margin: "0.25rem 1rem",
+          }}
+        >
           {option.label}
         </MenuItem>
       ))}
@@ -74,7 +81,6 @@ export const renderSelect = ({
 export const renderButton = ({ label, variant, color, handleOnClick, disabled }) => (
   <Button
     variant={variant ? variant : "outlined"}
-    color={color ? color : "primary"}
     size="small"
     onClick={handleOnClick}
     disabled={disabled}

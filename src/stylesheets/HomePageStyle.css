@@ -4,6 +4,13 @@
   margin-top: 3rem;
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  background: #d9d9d9;
+  color: var(--text-black-700);
+}
+
 h3.sih-offers {
   font-size: 2rem;
   color: var(--text-black-900);
@@ -186,12 +193,12 @@ h3.sih-offers {
 
 /* SIH Timeline Style Section */
 .timeline-heading {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--skin-color);
 }
 
 .timeline-description {
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 /* Event Schedule Section Style */

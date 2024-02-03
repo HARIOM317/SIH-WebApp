@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Grid, Box } from "@material-ui/core";
+import { Paper, Grid, Box, Divider } from "@mui/material";
 import {
   renderText,
   renderInputText,
@@ -9,14 +9,20 @@ import {
 
 const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
   return (
-    <Paper component={Box} style={{ padding: "2rem", margin: "2rem auto" }}>
+    <Paper component={Box} className="stepperPaperStyle">
       <Box mt={1} mb={2}>
         {renderText({ label: "Team Member Details", variant: "h6" })}
       </Box>
 
       {/* Member 1 Details */}
-      <Grid container spacing={4} style={{ marginBottom: "10px" }}>
-        <Grid item xs={12} sm={12} lg={4}>
+      <Divider
+        textAlign="left"
+        style={{ color: "var(--skin-color)", margin: "1rem 0" }}
+      >
+        Member 1 Details
+      </Divider>
+      <Grid container spacing={1} style={{ marginBottom: "10px" }}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Member 1 Name",
             name: "member1Name",
@@ -24,7 +30,7 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
-        <Grid item xs={12} sm={12} lg={4}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderSelect({
             label: "Member 1 Gender",
             name: "member1Gender",
@@ -37,7 +43,7 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
-        <Grid item xs={12} sm={12} lg={4}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Member 1 Email",
             name: "member1Email",
@@ -45,11 +51,26 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
+        <Grid item xs={12} sm={12} lg={6}>
+          {renderInputText({
+            label: "Member 1 Phone",
+            name: "member1Phone",
+            state: state,
+            handleOnChange,
+          })}
+        </Grid>
       </Grid>
 
       {/* Member 2 Details */}
-      <Grid container spacing={4} style={{ marginBottom: "10px" }}>
-        <Grid item xs={12} sm={12} lg={4}>
+      <Divider
+        textAlign="left"
+        style={{ color: "var(--skin-color)", margin: "1rem 0" }}
+      >
+        Member 2 Details
+      </Divider>
+
+      <Grid container spacing={1} style={{ marginBottom: "10px" }}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Member 2 Name",
             name: "member2Name",
@@ -57,7 +78,7 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
-        <Grid item xs={12} sm={12} lg={4}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderSelect({
             label: "Member 2 Gender",
             name: "member2Gender",
@@ -70,7 +91,7 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
-        <Grid item xs={12} sm={12} lg={4}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Member 2 Email",
             name: "member2Email",
@@ -78,11 +99,25 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
+        <Grid item xs={12} sm={12} lg={6}>
+          {renderInputText({
+            label: "Member 2 Phone",
+            name: "member2Phone",
+            state: state,
+            handleOnChange,
+          })}
+        </Grid>
       </Grid>
 
       {/* Member 3 Details */}
-      <Grid container spacing={4} style={{ marginBottom: "10px" }}>
-        <Grid item xs={12} sm={12} lg={4}>
+      <Divider
+        textAlign="left"
+        style={{ color: "var(--skin-color)", margin: "1rem 0" }}
+      >
+        Member 3 Details
+      </Divider>
+      <Grid container spacing={1} style={{ marginBottom: "10px" }}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Member 3 Name",
             name: "member3Name",
@@ -90,7 +125,7 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
-        <Grid item xs={12} sm={12} lg={4}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderSelect({
             label: "Member 3 Gender",
             name: "member3Gender",
@@ -103,7 +138,7 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
-        <Grid item xs={12} sm={12} lg={4}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Member 3 Email",
             name: "member3Email",
@@ -111,11 +146,25 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
+        <Grid item xs={12} sm={12} lg={6}>
+          {renderInputText({
+            label: "Member 3 Phone",
+            name: "member3Phone",
+            state: state,
+            handleOnChange,
+          })}
+        </Grid>
       </Grid>
 
       {/* Member 4 Details */}
-      <Grid container spacing={4} style={{ marginBottom: "10px" }}>
-        <Grid item xs={12} sm={12} lg={4}>
+      <Divider
+        textAlign="left"
+        style={{ color: "var(--skin-color)", margin: "1rem 0" }}
+      >
+        Member 4 Details
+      </Divider>
+      <Grid container spacing={1} style={{ marginBottom: "10px" }}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Member 4 Name",
             name: "member4Name",
@@ -123,7 +172,7 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
-        <Grid item xs={12} sm={12} lg={4}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderSelect({
             label: "Member 4 Gender",
             name: "member4Gender",
@@ -136,7 +185,7 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
-        <Grid item xs={12} sm={12} lg={4}>
+        <Grid item xs={12} sm={12} lg={6}>
           {renderInputText({
             label: "Member 4 Email",
             name: "member4Email",
@@ -144,10 +193,23 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             handleOnChange,
           })}
         </Grid>
+        <Grid item xs={12} sm={12} lg={6}>
+          {renderInputText({
+            label: "Member 4 Phone",
+            name: "member4Phone",
+            state: state,
+            handleOnChange,
+          })}
+        </Grid>
       </Grid>
 
       {/* Back and Next Button */}
-      <Grid container spacing={4} justifyContent="flex-end">
+      <Grid
+        container
+        spacing={0}
+        justifyContent="flex-end"
+        style={{ marginTop: "1.5rem" }}
+      >
         <Box style={{ padding: "1rem" }}>
           {renderButton({
             label: "Back",
@@ -155,7 +217,7 @@ const Step2 = ({ state, handleOnChange, handleNext, handlePrev }) => {
             color: "default",
           })}
         </Box>
-        <Box style={{ padding: "1rem" }}>
+        <Box style={{ padding: "1rem 0" }}>
           {renderButton({
             label: "Next",
             handleOnClick: handleNext,

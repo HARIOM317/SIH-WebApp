@@ -1,15 +1,9 @@
 import React, { Component } from "react";
 import "../../stylesheets/RegistrationFormStyle.css";
 
-import {
-  Box,
-  Grid,
-  Paper,
-  withStyles,
-  Stepper,
-  Step,
-  StepLabel,
-} from "@material-ui/core";
+import { Box, Grid, Paper, Stepper, Step, StepLabel } from "@mui/material";
+
+import { withStyles } from "@mui/styles";
 import { Style } from "./Style";
 import { PropTypes } from "prop-types";
 import { renderText } from "./DisplayComponents";
@@ -36,23 +30,30 @@ class FormComponent extends Component {
       // Step-2 Fields (Team Members Details)
       member1Name: "",
       member1Email: "",
+      member1Phone: "",
       member1Gender: "",
 
       member2Name: "",
       member2Email: "",
+      member2Phone: "",
       member2Gender: "",
 
       member3Name: "",
       member3Email: "",
+      member3Phone: "",
       member3Gender: "",
 
       member4Name: "",
       member4Email: "",
+      member4Phone: "",
       member4Gender: "",
 
       // Step-3 Fields (Solution)
       PSCode: "",
       PSTitle: "",
+
+      // Payment field
+      UTRId: "",
     },
     errors: {},
     currentStep: 0,
@@ -62,12 +63,13 @@ class FormComponent extends Component {
     const { classes } = this.props;
 
     // Regular expression for validation
-    const phoneValidation = new RegExp(/^\d{1,10}$/);
+    const phoneValidation = new RegExp(/^[0-9]{10}$/);
     const emailValidation = new RegExp(
       /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
     );
     const nameValidation = new RegExp(/^[a-zA-Z\s]{3,}$/);
     const teamNameValidation = new RegExp(/^[a-zA-Z _-]{3,}$/);
+    const utrIdValidation = /^[a-zA-Z0-9]+$/;
 
     const handleOnChange = (event) => {
       const { data, errors } = this.state;
@@ -102,14 +104,25 @@ class FormComponent extends Component {
         } else {
           delete errors[event.target.name];
         }
-      } else if (event.target.name === "leaderPhone") {
+      } else if (
+        event.target.name === "leaderPhone" ||
+        event.target.name === "member1Phone" ||
+        event.target.name === "member2Phone" ||
+        event.target.name === "member3Phone" ||
+        event.target.name === "member4Phone"
+      ) {
         if (!phoneValidation.test(event.target.value)) {
           errors[event.target.name] = "Invalid Phone Number";
         } else {
           delete errors[event.target.name];
         }
+      } else if (event.target.name === "UTRId") {
+        if (!utrIdValidation.test(event.target.value)) {
+          errors[event.target.name] = "Invalid UTR or Transaction ID";
+        } else {
+          delete errors[event.target.name];
+        }
       }
-
       data[event.target.name] = event.target.value;
 
       this.setState({ data, errors });
@@ -133,20 +146,26 @@ class FormComponent extends Component {
       const step2FieldsToCheck = [
         "member1Name",
         "member1Email",
+        "member1Phone",
         "member1Gender",
         "member2Name",
         "member2Email",
+        "member2Phone",
         "member2Gender",
         "member3Name",
         "member3Email",
+        "member3Phone",
         "member3Gender",
         "member4Name",
         "member4Email",
+        "member4Phone",
         "member4Gender",
       ];
 
       // Fields to check in the step 3
       const step3FieldsToCheck = ["PSCode", "PSTitle"];
+
+      const paymentFieldsToCheck = ["UTRId"];
 
       // Check if any of the fields in the current step is empty
       const isAnyFieldEmpty =
@@ -154,7 +173,11 @@ class FormComponent extends Component {
           ? step1FieldsToCheck.some((field) => data[field].trim() === "")
           : currentStep === 1
           ? step2FieldsToCheck.some((field) => data[field].trim() === "")
-          : step3FieldsToCheck.some((field) => data[field].trim() === "");
+          : currentStep === 2
+          ? step3FieldsToCheck.some((field) => data[field].trim() === "")
+          : currentStep === 4
+          ? paymentFieldsToCheck.some((field) => data[field].trim() === "")
+          : step1FieldsToCheck.some((field) => data[field].trim() === "");
 
       // If every fields of current step are filled then move on next step otherwise no
       if (isAnyFieldEmpty) {
@@ -251,8 +274,19 @@ class FormComponent extends Component {
         <div className="margin-top-ultra-max">
           <Grid container className={classes.formContainer}>
             <Grid item xs={12} sm={7}>
-              <Paper component={Box} mb={3} pt={2}>
-                <Box>{renderText({ label: "SIH 2.0 Registration Form" })}</Box>
+              <Paper
+                component={Box}
+                className="stepperPaperStyle"
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+              >
+                <Box style={{ marginBottom: "2rem" }}>
+                  {renderText({ label: "SIH 2.0 Registration Form" })}
+                </Box>
 
                 <Stepper activeStep={this.state.currentStep} alternativeLabel>
                   {StepperStep.map((item, index) => (

@@ -39,8 +39,12 @@
 }
 
 /* Registration Form Stepper Color */
-.MuiStepIcon-root.MuiStepIcon-active,
+/* .MuiStepIcon-root.MuiStepIcon-active,
 .MuiStepIcon-root.MuiStepIcon-completed {
+  color: red !important;
+} */
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active{
   color: var(--skin-color) !important;
 }
 

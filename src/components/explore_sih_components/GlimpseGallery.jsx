@@ -6,103 +6,103 @@ import "swiper/css";
 const galleryImages = [
   {
     id: 1,
-    img: "/images/Glimpse 2k23/1.jpg",
+    img: "/images/Glimpse_2k23/1.jpg",
   },
   {
     id: 2,
-    img: "/images/Glimpse 2k23/2.jpg",
+    img: "/images/Glimpse_2k23/2.jpg",
   },
   {
     id: 3,
-    img: "/images/Glimpse 2k23/3.jpg",
+    img: "/images/Glimpse_2k23/3.jpg",
   },
   {
     id: 4,
-    img: "/images/Glimpse 2k23/4.jpg",
+    img: "/images/Glimpse_2k23/4.jpg",
   },
   {
     id: 5,
-    img: "/images/Glimpse 2k23/5.jpg",
+    img: "/images/Glimpse_2k23/5.jpg",
   },
   {
     id: 6,
-    img: "/images/Glimpse 2k23/6.jpg",
+    img: "/images/Glimpse_2k23/6.jpg",
   },
   {
     id: 7,
-    img: "/images/Glimpse 2k23/7.jpg",
+    img: "/images/Glimpse_2k23/7.jpg",
   },
   {
     id: 8,
-    img: "/images/Glimpse 2k23/8.png",
+    img: "/images/Glimpse_2k23/8.png",
   },
   {
     id: 9,
-    img: "/images/Glimpse 2k23/9.jpg",
+    img: "/images/Glimpse_2k23/9.jpg",
   },
   {
     id: 10,
-    img: "/images/Glimpse 2k23/10.jpg",
+    img: "/images/Glimpse_2k23/10.jpg",
   },
   {
     id: 11,
-    img: "/images/Glimpse 2k23/11.jpg",
+    img: "/images/Glimpse_2k23/11.jpg",
   },
   {
     id: 12,
-    img: "/images/Glimpse 2k23/12.jpg",
+    img: "/images/Glimpse_2k23/12.jpg",
   },
   {
     id: 13,
-    img: "/images/Glimpse 2k23/13.jpg",
+    img: "/images/Glimpse_2k23/13.jpg",
   },
   {
     id: 14,
-    img: "/images/Glimpse 2k23/14.jpg",
+    img: "/images/Glimpse_2k23/14.jpg",
   },
   {
     id: 15,
-    img: "/images/Glimpse 2k23/15.jpg",
+    img: "/images/Glimpse_2k23/15.jpg",
   },
   {
     id: 16,
-    img: "/images/Glimpse 2k23/16.jpg",
+    img: "/images/Glimpse_2k23/16.jpg",
   },
   {
     id: 17,
-    img: "/images/Glimpse 2k23/17.jpg",
+    img: "/images/Glimpse_2k23/17.jpg",
   },
   {
     id: 18,
-    img: "/images/Glimpse 2k23/18.jpg",
+    img: "/images/Glimpse_2k23/18.jpg",
   },
   {
     id: 19,
-    img: "/images/Glimpse 2k23/19.jpg",
+    img: "/images/Glimpse_2k23/19.jpg",
   },
   {
     id: 20,
-    img: "/images/Glimpse 2k23/20.jpg",
+    img: "/images/Glimpse_2k23/20.jpg",
   },
   {
     id: 21,
-    img: "/images/Glimpse 2k23/21.jpg",
+    img: "/images/Glimpse_2k23/21.jpg",
   },
   {
     id: 22,
-    img: "/images/Glimpse 2k23/22.jpg",
+    img: "/images/Glimpse_2k23/22.jpg",
   },
   {
     id: 23,
-    img: "/images/Glimpse 2k23/23.jpg",
+    img: "/images/Glimpse_2k23/23.jpg",
   },
   {
     id: 24,
-    img: "/images/Glimpse 2k23/24.jpg",
+    img: "/images/Glimpse_2k23/24.jpg",
   },
   {
     id: 25,
-    img: "/images/Glimpse 2k23/25.jpg",
+    img: "/images/Glimpse_2k23/25.jpg",
   },
 ];
 

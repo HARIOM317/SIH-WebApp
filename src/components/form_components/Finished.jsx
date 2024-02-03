@@ -1,10 +1,10 @@
 import React from "react";
-import { Paper, Grid, Box } from "@material-ui/core";
+import { Paper, Grid, Box } from "@mui/material";
 
 
 const Finished = () => {
   return (
-    <Paper component={Box} style={{ padding: "2rem", margin: "2rem auto" }}>
+    <Paper component={Box} className="stepperPaperStyle">
       <Grid style={{ margin: "5rem auto" }}>
         <Box className="final-heading">
           😊 Thank You For Register on SIH 2.0
