@@ -7,7 +7,7 @@ const Prizes = () => {
         <div className="paddings innerWidth flexCenter announce-container">
           <div className="announceCard">
             <img
-              src="./images/Glimpse_2k23/Winners/Prizes/1st_prize.png"
+              src="./images/Glimpse 2k23/Winners/Prizes/1st_prize.png"
               alt="1st Prize"
             />
             <h3>Team Matrix</h3>
@@ -15,7 +15,7 @@ const Prizes = () => {
           </div>
           <div className="announceCard">
             <img
-              src="./images/Glimpse_2k23/Winners/Prizes/2nd_prize.png"
+              src="./images/Glimpse 2k23/Winners/Prizes/2nd_prize.png"
               alt="2nd Prize"
             />
             <h3>Team Hack Overflow</h3>
@@ -23,7 +23,7 @@ const Prizes = () => {
           </div>
           <div className="announceCard">
             <img
-              src="./images/Glimpse_2k23/Winners/Prizes/3rd_prize.png"
+              src="./images/Glimpse 2k23/Winners/Prizes/3rd_prize.png"
               alt="3rd Prize"
             />
             <h3>Team Future Farmers</h3>

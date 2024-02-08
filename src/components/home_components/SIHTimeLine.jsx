@@ -51,7 +51,7 @@ const timeLineAPI = [
 const SIHTimeLine = () => {
   return (
     <>
-      <section className="container">
+      <section className="container" style={{marginBottom: '2rem'}}>
         <h3 className="main-heading-center">Timeline of SIH 2.0</h3>
         <div className="event-timeline">
           <VerticalTimeline lineColor="var(--text-black-700)">

@@ -5,19 +5,19 @@ import BtnSlider from "./BtnSlider";
 const winnersData = [
   {
     id: 1,
-    image: "./images/Glimpse_2k23/Winners/1.jpg",
+    image: "./images/Glimpse 2k23/Winners/1.jpg",
   },
   {
     id: 2,
-    image: "./images/Glimpse_2k23/Winners/2.jpg",
+    image: "./images/Glimpse 2k23/Winners/2.jpg",
   },
   {
     id: 3,
-    image: "./images/Glimpse_2k23/Winners/3.jpg",
+    image: "./images/Glimpse 2k23/Winners/3.jpg",
   },
   {
     id: 4,
-    image: "./images/Glimpse_2k23/Winners/4.jpg",
+    image: "./images/Glimpse 2k23/Winners/4.jpg",
   },
 ];
 
@@ -53,7 +53,7 @@ const Winners = () => {
     <>
       <section className="winners">
         <div className="committee-top">
-          <img src="./images/Glimpse_2k23/Winners/winners.png" alt="Winners" />
+          <img src="./images/Glimpse 2k23/Winners/winners.png" alt="Winners" />
           <h2>Winners of SIH 2023</h2>
           <span>Here are the winners of SIH 2023</span>
           <span className="bottom-bar"></span>

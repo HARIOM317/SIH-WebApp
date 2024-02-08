@@ -45,7 +45,7 @@ const HomePageHeader = () => {
               {/* Embed Youtube Video */}
               <div className="ratio ratio-16x9">
                 <iframe
-                  src="https://www.youtube.com/embed/dGBt8_QUguY?si=CaWBvg9Nzhp8oDAs&rel=0"
+                  src="https://www.youtube.com/embed/BkPziwiZRj8?si=3z16pZZ-kbvNMYQp&rel=0"
                   title="SISTec Innovation Hackathon 2.0"
                   allowFullScreen={false}
                   className="video"

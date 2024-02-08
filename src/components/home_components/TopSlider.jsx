@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import sliderAPI from "../../APIs/sliderAPI";
+import { NavLink } from "react-router-dom";
 
 const TopSlider = () => {
   const [image] = useState(sliderAPI);
@@ -16,11 +17,13 @@ const TopSlider = () => {
               return (
                 <>
                   <div className={item.classes} key={item.id}>
-                    <img
-                      src={item.imagePath}
-                      className="d-block w-100"
-                      alt="Card"
-                    />
+                    <NavLink to={item.link}>
+                      <img
+                        src={item.imagePath}
+                        className="d-block w-100"
+                        alt="Card"
+                      />
+                    </NavLink>
                   </div>
                 </>
               );

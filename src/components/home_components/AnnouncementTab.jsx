@@ -10,8 +10,9 @@ const AnnouncementTab = () => {
               src="./images/announcement_tab_images/registration_fees.png"
               alt=""
             />
-            <h3>Registration fees</h3>
-            <span>Coming soon</span>
+            <h3>Registration </h3>
+            {/* <span>₹ 500/- per Team</span> */}
+            <span>Starting soon</span>
           </div>
           <div className="announceCard">
             <img
@@ -19,7 +20,8 @@ const AnnouncementTab = () => {
               alt=""
             />
             <h3>Grand Finale</h3>
-            <span>Coming soone</span>
+            {/* <span>29 Feb 2024</span> */}
+            <span>It's coming</span>
           </div>
           <div className="announceCard">
             <img src="./images/announcement_tab_images/venue.png" alt="" />
@@ -29,9 +31,10 @@ const AnnouncementTab = () => {
           <div className="announceCard">
             <img src="./images/announcement_tab_images/prizes.png" alt="" />
             <h3>Exciting Prizes</h3>
-            <span>Coming soon</span><br />
-            {/* <span>2nd ₹ 20000/-</span><br />
+            {/* <span>1st ₹ 25000/-</span><br />
+            <span>2nd ₹ 20000/-</span><br />
             <span>3rd ₹ 15000/-</span> */}
+            <span>Get ready for exciting prizes</span>
           </div>
         </div>
       </section>

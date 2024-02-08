@@ -57,7 +57,7 @@ const Navbar = () => {
       <header className="header">
         <div className="nav-container">
           <NavLink to="/">
-            <img src="./images/logo.png" alt="SIH" width={50} />
+            <img src="./images/sistec-logo.png" alt="SIH" width={50} />
           </NavLink>
 
           <nav className="menu">
@@ -178,7 +178,7 @@ const Navbar = () => {
               Register
             </NavLink>
 
-            <NavLink to="/register" className="icon-btn disabled">
+            <NavLink to="/register" className="icon-btn">
               <i className="fa-solid fa-user"></i>
             </NavLink>
 
