@@ -14,7 +14,7 @@ import PreviousYearGrandFinalePage from "./pages/PreviousYearGrandFinalePage";
 import PreviousYearWinnersPage from "./pages/PreviousYearWinnersPage";
 import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
-// import RegistrationPage from "./pages/RegistrationPage";
+import RegistrationPage from "./pages/RegistrationPage";
 import AdminLoginPage from "./pages/AdminLoginPage";
 import { AdminLayout } from "./components/admin/Admin-Layout";
 import { AdminContacts } from "./components/admin/Admin-Contacts";
@@ -47,7 +47,7 @@ const App = () => {
         <Route path="/result" Component={ComingSoonResultPage} />
         <Route path="/winners" Component={ComingSoonResultPage} />
         <Route path="/contact" Component={ContactPage} />
-        {/* <Route path="/register" Component={RegistrationPage} /> */}
+        <Route path="/register" Component={RegistrationPage} />
         <Route path="admin-login" element={<AdminLoginPage />} />
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="admin-users" element={<AdminUsers />} />
