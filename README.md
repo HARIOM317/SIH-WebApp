@@ -27,7 +27,7 @@ Welcome to the **SISTec Innovation Hackathon** website – the one-stop solution
 
 ## 🔍 Overview
 
-The College Hackathon Manager is designed to:
+The SISTec Innovation Hackathon Website is designed to:
 - **Streamline event management:** Easily create, update, and manage hackathon events.
 - **Centralize information:** Publish event details, previous year hackathon information, timelines, and more.
 - **Simplify registration:** Allow participants to register and pay entry fees online.
@@ -44,7 +44,6 @@ This project was developed as part of a college hackathon, and it aims to provid
 - **User Registration:** Participants can register and pay entry fees with ease.
 - **Timeline & Updates:** Real-time updates on event timelines, team registrations, and shortlisting.
 - **Responsive Design:** Fully responsive UI for a seamless experience on any device. 📱💻
-- **Secure Payment Gateway:** Integrated payment system for hassle-free fee collection. 💳
 
 ---
 
@@ -66,9 +65,7 @@ This project was developed as part of a college hackathon, and it aims to provid
 - **Frontend:** React.js, HTML5, CSS3, JavaScript (ES6+)
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-- **Authentication:** JWT, OAuth (optional integration)
-- **Payment Integration:** [Your Payment Gateway API]
-- **Deployment:** [Deployment Platform, e.g., Heroku, AWS, Netlify]
+- **Authentication:** JWT
 
 ---
 
@@ -91,9 +88,7 @@ This project was developed as part of a college hackathon, and it aims to provid
     cd backend
     npm install
     
-4. Environment Setup:
-
-Create a .env file in the server directory to set up all environment variables:
+4. Environment Setup: Create a .env file in the backend directory to set up all environment variables.
 
 5. Run the app:
 
@@ -122,7 +117,7 @@ Create a .env file in the server directory to set up all environment variables:
 ---
 
 ## 🎛 Admin Dashboard
-  - The Admin Dashboard is the control center of the College Hackathon Manager:
+  - The Admin Dashboard is the control center of the SISTec Innovation Hackathon Website.
   - Create & Edit Events: Easily add details, timelines, and rules for upcoming hackathons.
   - Manage Registrations: View participant details, approve teams, and manage fee payments.
   - Historical Data: Archive previous hackathon events with detailed information and statistics.
@@ -135,11 +130,17 @@ We welcome contributions! If you have suggestions or improvements, please follow
 
   - Fork the repository.
 
-  - Create a new branch (git checkout -b feature/YourFeature).
+  - Create a new branch.
+      ```bash
+      git checkout -b feature/YourFeature
 
-  - Commit your changes (git commit -m 'Add some feature').
+  - Commit your changes.
+      ```bash
+      git commit -m 'Add some feature'
 
-  - Push to the branch (git push origin feature/YourFeature).
+  - Push to the branch.
+      ```bash
+      git push origin feature/YourFeature
 
   - Open a pull request.
 
